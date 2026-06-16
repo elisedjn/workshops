@@ -5,9 +5,14 @@ lang: pt
 location: ericeira
 slug: postais-aquarela-ericeira
 date: "Sábado à tarde, data a anunciar"
+time: "Time to be confirmed"
 duration: "2 horas"
 price: "A partir de 35 euros"
-audience: "Adultos e iniciantes curiosos"
+priceDetails: "Materials included"
+place: "Ericeira, morada a confirmar"
+address: |
+  Address line 1
+  Address line 2
 order: 1
 draft: false
 ---

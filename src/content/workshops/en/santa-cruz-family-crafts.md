@@ -5,9 +5,14 @@ lang: en
 location: santa-cruz
 slug: family-craft-morning-santa-cruz
 date: "Morning sessions by request"
+time: "Time to be confirmed"
 duration: "1.5 hours"
 price: "Quote by group size"
-audience: "Families with children"
+priceDetails: "Materials included"
+place: "Santa Cruz, address to be confirmed"
+address: |
+  Address line 1
+  Address line 2
 order: 2
 draft: false
 ---

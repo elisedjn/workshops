@@ -5,9 +5,14 @@ lang: fr
 location: ericeira
 slug: couleurs-naturelles-jeu-textile-ericeira
 date: "Dates privées disponibles"
+time: "Time to be confirmed"
 duration: "2 h 30"
 price: "À partir de 45 euros"
-audience: "Petits groupes"
+priceDetails: "Materials included"
+place: "Ericeira, adresse à confirmer"
+address: |
+  Address line 1
+  Address line 2
 order: 2
 draft: false
 ---

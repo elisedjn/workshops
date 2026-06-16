@@ -6,6 +6,7 @@ import { type Locale } from "@i18n/config";
 import { withBase } from "@i18n/routes";
 import { getWorkshopLocationPath, getWorkshopPath } from "@i18n/workshops";
 import { sharedText, siteName } from "@i18n/ui";
+import { getBookingHref } from "../utils/booking";
 
 interface Props {
   workshop: CollectionEntry<"workshops">;
@@ -17,28 +18,28 @@ const lang = workshop.data.lang as Locale;
 const routeKey = workshop.data.location === "santa-cruz" ? "santaCruz" : workshop.data.location === "at-home" ? "atHome" : "ericeira";
 const canonicalPath = getWorkshopPath(workshop.data.location, lang, workshop.data.slug);
 const parentPath = getWorkshopLocationPath(workshop.data.location, lang);
-const bookingUrl = workshop.data.bookingUrl ?? "mailto:hello@example.com";
+const bookingUrl = getBookingHref(workshop.data.bookingUrl, workshop.data.bookingMessage);
 const labels = {
   en: {
     back: "Back to workshops",
-    date: "Date",
+    date: "Date & Time",
     duration: "Duration",
     price: "Price",
-    audience: "For",
+    place: "Place",
   },
   fr: {
     back: "Retour aux ateliers",
-    date: "Date",
+    date: "Date et heure",
     duration: "Durée",
     price: "Prix",
-    audience: "Pour",
+    place: "Lieu",
   },
   pt: {
     back: "Voltar aos workshops",
-    date: "Data",
+    date: "Data e hora",
     duration: "Duração",
     price: "Preço",
-    audience: "Para",
+    place: "Local",
   },
 }[lang];
 ---
@@ -56,6 +57,13 @@ const labels = {
       ← {labels.back}
     </a>
     <header class="mt-10 rounded-[2.75rem] bg-pink p-7 shadow-xl shadow-pink/20 md:p-10">
+      {workshop.data.image && (
+        <img
+          src={withBase(workshop.data.image)}
+          alt=""
+          class="mb-6 aspect-[16/9] w-full rounded-[2.1rem] object-cover shadow-lg shadow-grey/10"
+        />
+      )}
       <div class="rounded-[2.1rem] bg-white/80 p-7 md:p-10">
         <p class="text-sm font-black uppercase tracking-[0.24em] text-blue">{sharedText[lang].allWorkshops}</p>
         <h1 class="mt-5 font-heading text-7xl font-bold leading-[0.82] text-pink md:text-9xl">{workshop.data.title}</h1>
@@ -66,7 +74,10 @@ const labels = {
     <section class="mt-8 grid gap-3 md:grid-cols-4">
       <div class="rounded-2xl bg-yellow/35 p-4">
         <dt class="text-xs font-black uppercase tracking-[0.18em] text-pink">{labels.date}</dt>
-        <dd class="mt-1 font-bold text-grey">{workshop.data.date}</dd>
+        <dd class="mt-1 font-bold text-grey">
+          <span class="block">{workshop.data.date}</span>
+          {workshop.data.time && <span class="mt-1 block text-sm font-medium text-grey/70">{workshop.data.time}</span>}
+        </dd>
       </div>
       {workshop.data.duration && (
         <div class="rounded-2xl bg-blue/20 p-4">
@@ -77,13 +88,19 @@ const labels = {
       {workshop.data.price && (
         <div class="rounded-2xl bg-green/25 p-4">
           <dt class="text-xs font-black uppercase tracking-[0.18em] text-pink">{labels.price}</dt>
-          <dd class="mt-1 font-bold text-grey">{workshop.data.price}</dd>
+          <dd class="mt-1 font-bold text-grey">
+            <span class="block">{workshop.data.price}</span>
+            {workshop.data.priceDetails && <span class="mt-1 block text-sm font-medium text-grey/70">{workshop.data.priceDetails}</span>}
+          </dd>
         </div>
       )}
-      {workshop.data.audience && (
+      {workshop.data.place && (
         <div class="rounded-2xl bg-orange/25 p-4">
-          <dt class="text-xs font-black uppercase tracking-[0.18em] text-pink">{labels.audience}</dt>
-          <dd class="mt-1 font-bold text-grey">{workshop.data.audience}</dd>
+          <dt class="text-xs font-black uppercase tracking-[0.18em] text-pink">{labels.place}</dt>
+          <dd class="mt-1 font-bold text-grey">
+            <span class="block">{workshop.data.place}</span>
+            {workshop.data.address && <span class="mt-1 block whitespace-pre-line text-sm font-medium text-grey/70">{workshop.data.address}</span>}
+          </dd>
         </div>
       )}
     </section>

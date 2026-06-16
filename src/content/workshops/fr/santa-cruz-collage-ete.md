@@ -5,9 +5,14 @@ lang: fr
 location: santa-cruz
 slug: table-collage-ete-santa-cruz
 date: "Prochaine date d'été à annoncer"
+time: "Time to be confirmed"
 duration: "2 heures"
 price: "À partir de 30 euros"
-audience: "Adultes, ados et familles"
+priceDetails: "Materials included"
+place: "Santa Cruz, adresse à confirmer"
+address: |
+  Address line 1
+  Address line 2
 order: 1
 draft: false
 ---

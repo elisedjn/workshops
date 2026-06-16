@@ -90,12 +90,19 @@ const posts = (await getCollection("blog", ({ data }) => data.lang === lang && !
       <div class="grid gap-4">
         {
           posts.map((post) => (
-            <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="rounded-[1.5rem] bg-white/40 p-5 transition hover:bg-white/60">
-              <p class="text-xs font-black uppercase tracking-[0.2em] text-blue">
-                {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
-              </p>
-              <h3 class="mt-3 font-heading text-4xl font-bold leading-none">{post.data.title}</h3>
-              <p class="mt-3 text-grey/70">{post.data.description}</p>
+            <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="grid gap-4 rounded-[1.5rem] bg-white/40 p-4 transition hover:bg-white/60 sm:grid-cols-[8rem_1fr]">
+              {post.data.image ? (
+                <img src={withBase(post.data.image)} alt="" class="h-32 w-full rounded-[1rem] object-cover" loading="lazy" />
+              ) : (
+                <div class="h-32 rounded-[1rem] bg-blue/25"></div>
+              )}
+              <div>
+                <p class="text-xs font-black uppercase tracking-[0.2em] text-blue">
+                  {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
+                </p>
+                <h3 class="mt-3 font-heading text-4xl font-bold leading-none">{post.data.title}</h3>
+                <p class="mt-3 text-grey/70">{post.data.description}</p>
+              </div>
             </a>
           ))
         }

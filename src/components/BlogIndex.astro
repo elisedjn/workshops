@@ -29,18 +29,29 @@ const posts = (await getCollection("blog", ({ data }) => data.lang === lang && !
     <div class="mt-12 grid gap-5 md:grid-cols-2">
       {
         posts.map((post) => (
-          <article class="rounded-[2rem] border border-grey/10 bg-white/75 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-            <p class="text-xs font-black uppercase tracking-[0.22em] text-blue">
-              {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
-            </p>
-            <h2 class="mt-5 font-heading text-4xl leading-none text-grey">{post.data.title}</h2>
-            <p class="mt-4 text-grey/70">{post.data.description}</p>
-            <div class="mt-5 flex flex-wrap gap-2">
-              {post.data.tags.map((tag) => <span class="rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75">{tag}</span>)}
+          <article class="overflow-hidden rounded-[2rem] border border-grey/10 bg-white/75 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            {post.data.image ? (
+              <img src={withBase(post.data.image)} alt="" class="h-56 w-full object-cover" loading="lazy" />
+            ) : (
+              <div class="h-56 bg-pink/25 p-6">
+                <div class="grid h-full place-items-center rounded-[1.5rem] bg-white/45">
+                  <p class="font-heading text-5xl font-bold leading-none text-pink">{post.data.title}</p>
+                </div>
+              </div>
+            )}
+            <div class="p-6">
+              <p class="text-xs font-black uppercase tracking-[0.22em] text-blue">
+                {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
+              </p>
+              <h2 class="mt-5 font-heading text-4xl leading-none text-grey">{post.data.title}</h2>
+              <p class="mt-4 text-grey/70">{post.data.description}</p>
+              <div class="mt-5 flex flex-wrap gap-2">
+                {post.data.tags.map((tag) => <span class="rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75">{tag}</span>)}
+              </div>
+              <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="mt-7 inline-flex font-bold text-grey underline decoration-pink decoration-4 underline-offset-4">
+                {sharedText[lang].readMore}
+              </a>
             </div>
-            <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="mt-7 inline-flex font-bold text-grey underline decoration-pink decoration-4 underline-offset-4">
-              {sharedText[lang].readMore}
-            </a>
           </article>
         ))
       }

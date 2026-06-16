@@ -5,9 +5,14 @@ lang: fr
 location: ericeira
 slug: cartes-postales-aquarelle-ericeira
 date: "Samedi après-midi, date à annoncer"
+time: "Time to be confirmed"
 duration: "2 heures"
 price: "À partir de 35 euros"
-audience: "Adultes et débutants curieux"
+priceDetails: "Materials included"
+place: "Ericeira, adresse à confirmer"
+address: |
+  Address line 1
+  Address line 2
 order: 1
 draft: false
 ---

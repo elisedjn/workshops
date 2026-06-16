@@ -34,6 +34,13 @@ const canonicalPath = `${localizedRoutes.blog[lang]}${post.data.slug}/`;
       <h1 class="mt-5 font-heading text-6xl leading-[0.9] text-grey md:text-7xl">{post.data.title}</h1>
       <p class="mt-6 text-xl leading-8 text-grey/75">{post.data.description}</p>
     </header>
+    {post.data.image && (
+      <img
+        src={withBase(post.data.image)}
+        alt=""
+        class="mt-10 aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl shadow-pink/15"
+      />
+    )}
     <div class="prose-workshop mt-12 border-t border-grey/10 pt-10">
       <Content />
     </div>

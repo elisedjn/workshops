@@ -1,8 +1,8 @@
 ---
-import LanguageSwitcher from "@components/LanguageSwitcher.astro";
-import { type Locale, type RouteKey } from "@i18n/config";
-import { localizedRoutes, withBase } from "@i18n/routes";
-import { navLabels } from "@i18n/ui";
+import LanguageSwitcher from '@components/LanguageSwitcher.astro';
+import { type Locale, type RouteKey } from '@i18n/config';
+import { localizedRoutes, withBase } from '@i18n/routes';
+import { navLabels } from '@i18n/ui';
 
 interface Props {
   lang: Locale;
@@ -10,32 +10,32 @@ interface Props {
 }
 
 const { lang, currentRoute } = Astro.props;
-const navItems: RouteKey[] = ["ericeira", "santaCruz", "atHome", "blog"];
+const navItems: RouteKey[] = ['ericeira', 'santaCruz', 'atHome', 'blog'];
 const alternates = localizedRoutes[currentRoute];
 ---
 
-<header class="sticky top-0 z-20 border-b border-pink/20 bg-white/85 backdrop-blur-xl">
-  <div class="mx-auto flex max-w-6xl items-center justify-between gap-5 px-5 py-4">
-    <a href={withBase(localizedRoutes.home[lang])} class="group inline-flex items-center">
+<header class='sticky top-0 z-20 border-b border-pink/20 bg-white/85 backdrop-blur-xl'>
+  <div class='mx-auto flex max-w-6xl items-center justify-between gap-5 px-5 py-4'>
+    <a href={withBase(localizedRoutes.home[lang])} class='group inline-flex items-center'>
       <img
-        src={withBase("/images/logo.png")}
-        alt="WaterLili Workshops"
-        width="800"
-        height="300"
-        class="h-14 w-auto transition group-hover:-rotate-1 group-hover:scale-[1.02] md:h-16"
+        src={withBase('/images/logo.png')}
+        alt='WaterLili Workshops'
+        width='800'
+        height='300'
+        class='h-14 w-auto transition group-hover:-rotate-1 group-hover:scale-[1.02] md:h-16'
       />
     </a>
-    <div class="hidden items-center gap-7 lg:flex">
-      <nav aria-label="Main navigation" class="flex items-center gap-6">
+    <div class='hidden items-center gap-7 lg:flex'>
+      <nav aria-label='Main navigation' class='flex items-center gap-6'>
         {
           navItems.map((item) => (
             <a
               href={withBase(localizedRoutes[item][lang])}
               class:list={[
-                "text-sm font-bold uppercase tracking-[0.18em] transition hover:text-blue",
-                currentRoute === item ? "text-pink" : "text-grey/65",
+                'text-sm font-bold uppercase tracking-[0.18em] transition hover:text-blue',
+                currentRoute === item ? 'text-pink' : 'text-grey/65',
               ]}
-              aria-current={currentRoute === item ? "page" : undefined}
+              aria-current={currentRoute === item ? 'page' : undefined}
             >
               {navLabels[lang][item]}
             </a>
@@ -44,18 +44,23 @@ const alternates = localizedRoutes[currentRoute];
       </nav>
       <LanguageSwitcher currentLocale={lang} alternates={alternates} />
     </div>
-    <div class="lg:hidden">
+    <div class='lg:hidden'>
       <LanguageSwitcher currentLocale={lang} alternates={alternates} />
     </div>
   </div>
-  <nav aria-label="Mobile navigation" class="flex gap-2 overflow-x-auto border-t border-pink/15 px-5 py-3 lg:hidden">
+  <nav
+    aria-label='Mobile navigation'
+    class='flex gap-2 overflow-x-auto border-t border-pink/15 px-5 py-3 lg:hidden'
+  >
     {
       navItems.map((item) => (
         <a
           href={withBase(localizedRoutes[item][lang])}
           class:list={[
-            "whitespace-nowrap rounded-full px-4 py-2 text-xs font-bold uppercase tracking-[0.16em]",
-            currentRoute === item ? "bg-pink text-grey" : "bg-white/70 text-grey/70 hover:bg-blue/20",
+            'whitespace-nowrap rounded-full px-4 py-2 text-xs font-bold uppercase tracking-[0.16em]',
+            currentRoute === item
+              ? 'bg-pink text-white'
+              : 'bg-white/70 text-grey/70 hover:bg-blue/20',
           ]}
         >
           {navLabels[lang][item]}

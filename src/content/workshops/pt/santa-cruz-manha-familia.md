@@ -5,9 +5,14 @@ lang: pt
 location: santa-cruz
 slug: manha-criativa-familia-santa-cruz
 date: "Manhãs por pedido"
+time: "Time to be confirmed"
 duration: "1 h 30"
 price: "Orçamento conforme o grupo"
-audience: "Famílias com crianças"
+priceDetails: "Materials included"
+place: "Santa Cruz, morada a confirmar"
+address: |
+  Address line 1
+  Address line 2
 order: 2
 draft: false
 ---
