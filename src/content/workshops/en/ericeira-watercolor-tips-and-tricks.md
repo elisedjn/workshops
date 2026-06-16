@@ -7,7 +7,8 @@ slug: watercolor-tips-and-tricks-ericeira
 date: 'Every Sunday'
 time: '10am to 12pm'
 duration: '2 hours'
-price: '25€ per session'
+durationDetails: 'All levels'
+price: '25€'
 priceDetails: 'Materials included'
 place: 'JBay Collective'
 address: |
@@ -19,10 +20,10 @@ bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the next Watercolor Tips & Tricks session in Ericeira!'
 ---
 
-Discover a relaxed and inspiring watercolor workshop in Ericeira with Waterlili. This creative 2-hour experience is designed for anyone who wants to slow down, experiment, and connect with watercolor in a welcoming atmosphere near the ocean.
+Discover a **relaxed and inspiring watercolor workshop** in Ericeira with Waterlili. This creative 2-hour experience is designed for anyone who wants to **slow down, experiment, and connect with watercolor** in a welcoming atmosphere near the ocean.
 
-Each session explores a different watercolor technique or theme. Some classes focus on simple and playful basics, while others introduce more detailed or advanced approaches depending on the participants’ experience and interests.
+Each session explores a **different watercolor technique or theme**. Some classes focus on simple and playful basics, while others introduce more detailed or advanced approaches depending on the participants’ experience and interests.
 
-Begin with a guided explanation and live demonstration by the artist, followed by time to practice, experiment, and create your own piece with personal support throughout the session.
+Begin with a guided explanation and live demonstration by the artist, followed by time to **practice, experiment, and create your own piece** with personal support throughout the session.
 
-No previous experience is needed, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to try watercolor for the first time. All materials are included, and you will leave with your own handmade artwork and a calm creative memory of Ericeira.
+**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to try watercolor for the first time. **All materials are included**, and you will leave with your own **handmade artwork** and a calm creative memory of Ericeira.

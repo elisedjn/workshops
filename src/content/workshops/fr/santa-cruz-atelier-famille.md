@@ -7,6 +7,7 @@ slug: matinee-creative-famille-santa-cruz
 date: "Matinées sur demande"
 time: "Time to be confirmed"
 duration: "1 h 30"
+durationDetails: "All levels"
 price: "Devis selon la taille du groupe"
 priceDetails: "Materials included"
 place: "Santa Cruz, adresse à confirmer"

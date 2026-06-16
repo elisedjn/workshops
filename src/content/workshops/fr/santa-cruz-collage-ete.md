@@ -7,6 +7,7 @@ slug: table-collage-ete-santa-cruz
 date: "Prochaine date d'été à annoncer"
 time: "Time to be confirmed"
 duration: "2 heures"
+durationDetails: "All levels"
 price: "À partir de 30 euros"
 priceDetails: "Materials included"
 place: "Santa Cruz, adresse à confirmer"

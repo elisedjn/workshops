@@ -7,6 +7,7 @@ slug: summer-collage-table-santa-cruz
 date: "Next summer date to be announced"
 time: "Time to be confirmed"
 duration: "2 hours"
+durationDetails: "All levels"
 price: "From 30 euros"
 priceDetails: "Materials included"
 place: "Santa Cruz, address to be confirmed"

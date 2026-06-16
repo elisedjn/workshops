@@ -72,6 +72,13 @@ price: "25€"
 priceDetails: "Materials included"
 ```
 
+Workshop duration can also include a second detail line:
+
+```yaml
+duration: "2 hours"
+durationDetails: "All levels"
+```
+
 Workshop booking links can include a prefilled message:
 
 ```yaml

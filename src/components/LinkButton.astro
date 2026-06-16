@@ -2,9 +2,10 @@
 interface Props {
   href: string;
   variant?: 'primary' | 'secondary';
+  fullWidth?: boolean;
 }
 
-const { href, variant = 'primary' } = Astro.props;
+const { href, variant = 'primary', fullWidth = false } = Astro.props;
 ---
 
 <a
@@ -14,6 +15,7 @@ const { href, variant = 'primary' } = Astro.props;
     variant === 'primary'
       ? 'bg-pink text-white hover:bg-orange'
       : 'border border-pink/35 bg-white/70 text-pink hover:border-pink hover:bg-pink/10',
+    fullWidth && 'w-full',
   ]}
 >
   <slot />

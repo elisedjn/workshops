@@ -59,6 +59,20 @@ const labels = {
           </>
         )
       }
+      {
+        workshop.data.price && (
+          <div class='absolute right-4 bottom-4 z-10 grid size-20 place-items-center rounded-full bg-yellow/95 p-4 text-center shadow-xl shadow-grey/15 lg:hidden'>
+            <div>
+              <p class='mt-1 font-bold leading-tight text-grey'>{workshop.data.price}</p>
+              {workshop.data.priceDetails && (
+                <p class='mt-1 text-[0.58rem] leading-tight text-grey/70'>
+                  {workshop.data.priceDetails}
+                </p>
+              )}
+            </div>
+          </div>
+        )
+      }
     </div>
     <div class='p-6 md:p-8'>
       <h2 class='font-heading text-4xl font-bold leading-[0.85] text-pink'>
@@ -67,14 +81,23 @@ const labels = {
       <p class='mt-4 text-sm text-grey/75'>
         {workshop.data.description}
       </p>
-      <dl class='mt-6 grid gap-3 sm:grid-cols-2'>
-        <div class='rounded-2xl bg-yellow/30 p-4'>
+      <dl class='mt-6 grid grid-cols-2 gap-3 lg:grid-cols-2'>
+        <div
+          class:list={[
+            'rounded-2xl bg-yellow/30 p-4',
+            workshop.data.duration ? '' : 'col-span-2 lg:col-span-1',
+          ]}
+        >
           <dt class='text-xs font-black uppercase tracking-[0.18em] text-pink'>
             {labels.date}
           </dt>
           <dd class='mt-1 text-grey'>
             <span class='block'>{workshop.data.date}</span>
-            {workshop.data.time && <span class='mt-1 block text-sm text-grey/70'>{workshop.data.time}</span>}
+            {
+              workshop.data.time && (
+                <span class='mt-1 block text-sm text-grey/70'>{workshop.data.time}</span>
+              )
+            }
           </dd>
         </div>
         {
@@ -83,32 +106,43 @@ const labels = {
               <dt class='text-xs font-black uppercase tracking-[0.18em] text-pink'>
                 {labels.duration}
               </dt>
-              <dd class='mt-1 text-grey'>{workshop.data.duration}</dd>
+              <dd class='mt-1 text-grey'>
+                <span class='block'>{workshop.data.duration}</span>
+                {workshop.data.durationDetails && <span class='mt-1 block text-sm text-grey/70'>{workshop.data.durationDetails}</span>}
+              </dd>
             </div>
           )
         }
         {
           workshop.data.price && (
-            <div class='rounded-2xl bg-green/25 p-4'>
+            <div class='hidden rounded-2xl bg-green/25 p-4 lg:block'>
               <dt class='text-xs font-black uppercase tracking-[0.18em] text-pink'>
                 {labels.price}
               </dt>
               <dd class='mt-1 text-grey'>
                 <span class='block'>{workshop.data.price}</span>
-                {workshop.data.priceDetails && <span class='mt-1 block text-sm text-grey/70'>{workshop.data.priceDetails}</span>}
+                {workshop.data.priceDetails && (
+                  <span class='mt-1 block text-sm text-grey/70'>
+                    {workshop.data.priceDetails}
+                  </span>
+                )}
               </dd>
             </div>
           )
         }
         {
           workshop.data.place && (
-            <div class='rounded-2xl bg-orange/25 p-4'>
+            <div class='col-span-2 rounded-2xl bg-orange/25 p-4 lg:col-span-1'>
               <dt class='text-xs font-black uppercase tracking-[0.18em] text-pink'>
                 {labels.place}
               </dt>
               <dd class='mt-1 text-grey'>
                 <span class='block'>{workshop.data.place}</span>
-                {workshop.data.address && <span class='mt-1 block whitespace-pre-line text-sm text-grey/70'>{workshop.data.address}</span>}
+                {workshop.data.address && (
+                  <span class='mt-1 block whitespace-pre-line text-sm text-grey/70'>
+                    {workshop.data.address}
+                  </span>
+                )}
               </dd>
             </div>
           )

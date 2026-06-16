@@ -7,6 +7,7 @@ slug: cartes-postales-aquarelle-ericeira
 date: "Samedi après-midi, date à annoncer"
 time: "Time to be confirmed"
 duration: "2 heures"
+durationDetails: "All levels"
 price: "À partir de 35 euros"
 priceDetails: "Materials included"
 place: "Ericeira, adresse à confirmer"

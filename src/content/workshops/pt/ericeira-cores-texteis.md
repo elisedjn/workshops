@@ -7,6 +7,7 @@ slug: cores-naturais-jogo-textil-ericeira
 date: "Datas privadas disponíveis"
 time: "Time to be confirmed"
 duration: "2 h 30"
+durationDetails: "All levels"
 price: "A partir de 45 euros"
 priceDetails: "Materials included"
 place: "Ericeira, morada a confirmar"

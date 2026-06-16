@@ -27,6 +27,7 @@ const workshops = defineCollection({
     date: z.string().default("Date to be announced"),
     time: z.string().optional(),
     duration: z.string().optional(),
+    durationDetails: z.string().optional(),
     price: z.string().optional(),
     priceDetails: z.string().optional(),
     place: z.string().optional(),

@@ -7,6 +7,7 @@ slug: mesa-colagem-verao-santa-cruz
 date: "Próxima data de verão a anunciar"
 time: "Time to be confirmed"
 duration: "2 horas"
+durationDetails: "All levels"
 price: "A partir de 30 euros"
 priceDetails: "Materials included"
 place: "Santa Cruz, morada a confirmar"
