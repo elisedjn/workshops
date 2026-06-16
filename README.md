@@ -1,4 +1,4 @@
-# WaterLili Workshops
+# Waterlili Creation
 
 Static multilingual website for creative workshops in Ericeira, Santa Cruz, and at people's homes.
 
@@ -91,3 +91,7 @@ The rendered link becomes:
 ```txt
 https://wa.me/351000000000?text=Hello%2C%20I%20would%20like%20to%20book%20the%20watercolor%20workshop.
 ```
+
+## Contact Links
+
+Footer links are configured in `src/config/contact.ts`. Update the Instagram, Facebook, email, Ko-fi, and WhatsApp values there.

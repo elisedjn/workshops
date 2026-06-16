@@ -1,6 +1,6 @@
 import type { Locale, RouteKey } from './config';
 
-export const siteName = 'WaterLili Workshops';
+export const siteName = 'Waterlili Creation';
 
 export const navLabels: Record<Locale, Record<RouteKey, string>> = {
   en: {
@@ -94,7 +94,7 @@ export const homeContent: Record<
     eyebrow: 'Creative workshops by the coast',
     title: 'Slow, joyful workshops for curious hands.',
     intro:
-      'WaterLili Workshops brings creative moments to Ericeira, Santa Cruz, and private homes. Each session is designed to feel relaxed, generous, and easy to join.',
+      'Waterlili Creation brings creative moments to Ericeira, Santa Cruz, and private homes. Each session is designed to feel relaxed, generous, and easy to join.',
     note: 'Choose a location-based event or invite the workshop to your home for birthdays, holidays, family gatherings, and small group celebrations.',
     blogIntro:
       'The blog supports local SEO while sharing useful ideas for creative activities, seasonal inspiration, and things to do around the west coast of Portugal.',
@@ -106,7 +106,7 @@ export const homeContent: Record<
     eyebrow: "Ateliers créatifs au bord de l'océan",
     title: 'Des ateliers doux et joyeux pour les mains curieuses.',
     intro:
-      'WaterLili Workshops propose des moments créatifs à Ericeira, Santa Cruz et chez vous. Chaque atelier est pensé pour être simple, chaleureux et accessible.',
+      'Waterlili Creation propose des moments créatifs à Ericeira, Santa Cruz et chez vous. Chaque atelier est pensé pour être simple, chaleureux et accessible.',
     note: "Choisissez un événement local ou invitez l'atelier chez vous pour un anniversaire, des vacances, une réunion de famille ou un petit groupe.",
     blogIntro:
       "Le blog aide le référencement local tout en partageant des idées d'activités créatives, des inspirations saisonnières et des choses à faire sur la côte ouest du Portugal.",
@@ -118,7 +118,7 @@ export const homeContent: Record<
     eyebrow: 'Workshops criativos junto ao mar',
     title: 'Workshops tranquilos e alegres para mãos curiosas.',
     intro:
-      'WaterLili Workshops leva momentos criativos à Ericeira, Santa Cruz e a casas particulares. Cada sessão é pensada para ser acolhedora, simples e fácil de participar.',
+      'Waterlili Creation leva momentos criativos à Ericeira, Santa Cruz e a casas particulares. Cada sessão é pensada para ser acolhedora, simples e fácil de participar.',
     note: 'Escolha um evento local ou convide o workshop para sua casa em aniversários, férias, encontros de família e pequenas celebrações.',
     blogIntro:
       'O blog apoia o SEO local enquanto partilha ideias de atividades criativas, inspiração sazonal e sugestões do que fazer na costa oeste de Portugal.',
