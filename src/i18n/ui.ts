@@ -85,6 +85,11 @@ export const homeContent: Record<
     intro: string;
     note: string;
     blogIntro: string;
+    locationTitle: string;
+    locationIntro: string;
+    locationElsewhere: string;
+    aboutTitle: string;
+    aboutText: string;
   }
 > = {
   en: {
@@ -98,6 +103,13 @@ export const homeContent: Record<
     note: 'Choose a location-based event or invite the workshop to your home for birthdays, holidays, family gatherings, and small group celebrations.',
     blogIntro:
       'The blog supports local SEO while sharing useful ideas for creative activities, seasonal inspiration, and things to do around the west coast of Portugal.',
+    locationTitle: 'Choose your location',
+    locationIntro:
+      'Join a workshop by the ocean or invite the creative table somewhere else.',
+    locationElsewhere: 'Elsewhere',
+    aboutTitle: 'About me',
+    aboutText:
+      'I’ve always been drawn to creating and crafting. While watercolor is my primary medium today, I still love the magic of making things with my hands. My mission? To bring color and joy back into people’s lives through creativity. That’s why I design warm, accessible workshops for anyone who wants to slow down, experiment, and savor the simple pleasure of making. Here, perfection isn’t the goal—it’s all about sharing a generous, heartfelt creative moment together.',
   },
   fr: {
     seoTitle: 'Ateliers créatifs à Ericeira, Santa Cruz et à domicile',
@@ -110,6 +122,13 @@ export const homeContent: Record<
     note: "Choisissez un événement local ou invitez l'atelier chez vous pour un anniversaire, des vacances, une réunion de famille ou un petit groupe.",
     blogIntro:
       "Le blog aide le référencement local tout en partageant des idées d'activités créatives, des inspirations saisonnières et des choses à faire sur la côte ouest du Portugal.",
+    locationTitle: 'Choisissez votre lieu',
+    locationIntro:
+      "Rejoignez un atelier près de l'océan ou invitez la table créative ailleurs.",
+    locationElsewhere: 'Ailleurs',
+    aboutTitle: 'À propos',
+    aboutText:
+      "Je crée des ateliers chaleureux et accessibles pour celles et ceux qui veulent ralentir, expérimenter et profiter du plaisir de faire avec leurs mains. L'objectif n'est pas la perfection, mais un moment créatif généreux autour de la table.",
   },
   pt: {
     seoTitle: 'Workshops criativos na Ericeira, Santa Cruz e em casa',
@@ -122,6 +141,13 @@ export const homeContent: Record<
     note: 'Escolha um evento local ou convide o workshop para sua casa em aniversários, férias, encontros de família e pequenas celebrações.',
     blogIntro:
       'O blog apoia o SEO local enquanto partilha ideias de atividades criativas, inspiração sazonal e sugestões do que fazer na costa oeste de Portugal.',
+    locationTitle: 'Escolha o local',
+    locationIntro:
+      'Participe num workshop junto ao mar ou convide a mesa criativa para outro lugar.',
+    locationElsewhere: 'Outro lugar',
+    aboutTitle: 'Sobre mim',
+    aboutText:
+      'Crio workshops acolhedores e acessíveis para quem quer abrandar, experimentar e desfrutar de fazer algo com as mãos. O foco não é a perfeição, mas um momento criativo generoso à volta da mesa.',
   },
 };
 

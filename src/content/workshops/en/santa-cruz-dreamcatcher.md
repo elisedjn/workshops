@@ -4,6 +4,7 @@ description: 'Craft your very own dreamcatcher from scratch and fill it with goo
 lang: en
 location: santa-cruz
 slug: dreamcatcher-santa-cruz
+startDate: 2026-06-26T16:00:00+01:00
 date: 'Friday, June 26th'
 time: '4pm - 6pm'
 duration: '2 hours'
@@ -13,7 +14,7 @@ priceDetails: 'Materials included'
 place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
-order: 1
+order: 2
 draft: false
 image: '/images/dreamcatcher-workshop-santa-cruz-26-june-2026-portugal.jpg'
 ---

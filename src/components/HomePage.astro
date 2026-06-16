@@ -1,7 +1,6 @@
 ---
 import { getCollection } from 'astro:content';
 import LinkButton from '@components/LinkButton.astro';
-import WorkshopCard from '@components/WorkshopCard.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { type Locale } from '@i18n/config';
 import { localizedRoutes, withBase } from '@i18n/routes';
@@ -47,7 +46,7 @@ const nextWorkshopBookingHref = nextWorkshop
   lang={lang}
   routeKey='home'
 >
-  <section class='relative isolate pb-8 md:pb-24'>
+  <section class='relative isolate pb-8'>
     <div
       class='relative grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-[max(1.25rem,calc((100vw-72rem)/2+1.25rem))] lg:py-8'
     >
@@ -85,11 +84,11 @@ const nextWorkshopBookingHref = nextWorkshop
           class='relative rounded-[2.3rem] border border-white/35 bg-white/82 p-7 backdrop-blur'
         >
           <p
-            class='inline-flex rounded-full bg-pink px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-white'
+            class='inline-flex rounded-full bg-green px-4 py-2 text-xs font-black uppercase tracking-[0.22em] text-white'
           >
             {fallbackNextWorkshop.label}
           </p>
-          <h2 class='mt-6 font-heading text-4xl font-bold leading-[0.82] text-pink'>
+          <h2 class='mt-6 font-heading text-4xl font-bold leading-[0.82] text-grey'>
             {nextWorkshop ? nextWorkshop.data.title : fallbackNextWorkshop.title}
           </h2>
           <div class='text-grey'>
@@ -140,31 +139,52 @@ const nextWorkshopBookingHref = nextWorkshop
     </div>
   </section>
 
-  <section class='px-5 py-12'>
-    <div class='mx-auto max-w-6xl'>
-      <div class='flex flex-col justify-between gap-5 md:flex-row md:items-end'>
-        <div>
-          <p class='text-sm font-black uppercase tracking-[0.24em] text-blue'>
-            {sharedText[lang].allWorkshops}
-          </p>
-          <h2
-            class='mt-4 font-heading text-6xl font-bold leading-none text-pink md:text-7xl'
-          >
-            Ericeira, Santa Cruz, or your place.
-          </h2>
-        </div>
+  <section class='px-5'>
+    <div class='mx-auto max-w-4xl text-center'>
+      <h2 class='mt-4 font-heading text-6xl font-bold leading-none text-pink md:text-7xl'>
+        {content.locationTitle}
+      </h2>
+      <p class='mx-auto mt-4 max-w-2xl text-grey/75'>{content.locationIntro}</p>
+      <div class='my-8 flex flex-col justify-center gap-4 sm:flex-row'>
+        <LinkButton href={withBase(localizedRoutes.ericeira[lang])} color='blue'
+          >Ericeira</LinkButton
+        >
+        <LinkButton href={withBase(localizedRoutes.santaCruz[lang])} color='orange'>
+          Santa Cruz
+        </LinkButton>
+        <LinkButton href={withBase(localizedRoutes.atHome[lang])} color='green'>
+          {content.locationElsewhere}
+        </LinkButton>
       </div>
-      <div class='mt-10 grid gap-5 md:grid-cols-3'>
-        <WorkshopCard lang={lang} route='ericeira' />
-        <WorkshopCard lang={lang} route='santaCruz' />
-        <WorkshopCard lang={lang} route='atHome' />
+    </div>
+  </section>
+
+  <section class='py-4 bg-pink/65'>
+    <div
+      class='mx-auto max-w-6xl grid items-center gap-8 p-8 md:grid-cols-[14rem_1fr] md:p-10'
+    >
+      <img
+        src={withBase('/images/waterlili-watercolor-artist-workshop-organiser.jpg')}
+        alt=''
+        class='mx-auto size-58 rounded-full object-cover object-top shadow-xl shadow-pink/15'
+      />
+      <div>
+        <p class='text-sm font-black uppercase tracking-[0.24em] text-grey/75'>
+          {content.aboutTitle}
+        </p>
+        <h2
+          class='mt-3 font-heading text-5xl font-bold leading-none text-white md:text-6xl'
+        >
+          Waterlili
+        </h2>
+        <p class='mt-4 text-grey/75'>{content.aboutText}</p>
       </div>
     </div>
   </section>
 
   <section class='px-5 py-12'>
     <div
-      class='mx-auto grid max-w-6xl gap-8 rounded-[2.5rem] bg-[linear-gradient(135deg,var(--pink),var(--orange)_48%,var(--yellow))] p-8 text-grey shadow-xl shadow-pink/20 md:grid-cols-[0.8fr_1.2fr] md:p-12'
+      class='mx-auto grid max-w-6xl gap-8 rounded-[2.5rem] bg-white/40 p-8 text-grey shadow-xl shadow-pink/20 md:grid-cols-[0.8fr_1.2fr] md:p-12'
     >
       <div>
         <p class='text-sm font-black uppercase tracking-[0.24em] text-white'>
