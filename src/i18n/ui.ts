@@ -91,7 +91,7 @@ export const homeContent: Record<
     seoTitle: 'Creative workshops in Ericeira, Santa Cruz and at home',
     seoDescription:
       'Creative workshops for locals, travelers, families, and private groups in Ericeira, Santa Cruz, and at home in Portugal.',
-    eyebrow: 'Creative workshops by the coast',
+    eyebrow: 'Creative workshops by the Portuguese coast',
     title: 'Slow, joyful workshops for curious hands.',
     intro:
       'Waterlili Creation brings creative moments to Ericeira, Santa Cruz, and private homes. Each session is designed to feel relaxed, generous, and easy to join.',

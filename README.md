@@ -59,11 +59,12 @@ Both values are displayed together under the same Place block.
 Workshop date and time can be separated the same way:
 
 ```yaml
+startDate: 2026-07-20T10:00:00+01:00
 date: "Saturday 20 July"
 time: "10:00-12:00"
 ```
 
-Both values are displayed together under the Date & Time block.
+`startDate` is used by the homepage to automatically find the next upcoming workshop. `date` and `time` are the human-friendly values displayed under the Date & Time block.
 
 Workshop prices can include a second detail line:
 

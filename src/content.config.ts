@@ -24,6 +24,7 @@ const workshops = defineCollection({
     lang: z.enum(["en", "fr", "pt"]),
     location: z.enum(["ericeira", "santa-cruz", "at-home"]),
     slug: z.string(),
+    startDate: z.coerce.date().optional(),
     date: z.string().default("Date to be announced"),
     time: z.string().optional(),
     duration: z.string().optional(),
