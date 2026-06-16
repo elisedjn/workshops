@@ -94,7 +94,7 @@ export const homeContent: Record<
     eyebrow: 'Creative workshops by the Portuguese coast',
     title: 'Slow, joyful workshops for curious hands.',
     intro:
-      'Waterlili Creation brings creative moments to Ericeira, Santa Cruz, and private homes. Each session is designed to feel relaxed, generous, and easy to join.',
+      'WaterLili offers gentle, joyful creative moments. Each session is a pause for you : relaxed, welcoming, and full of warmth.',
     note: 'Choose a location-based event or invite the workshop to your home for birthdays, holidays, family gatherings, and small group celebrations.',
     blogIntro:
       'The blog supports local SEO while sharing useful ideas for creative activities, seasonal inspiration, and things to do around the west coast of Portugal.',

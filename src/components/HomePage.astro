@@ -47,21 +47,39 @@ const nextWorkshopBookingHref = nextWorkshop
   lang={lang}
   routeKey='home'
 >
-  <section class='relative isolate overflow-hidden px-5 py-8 md:py-24'>
-    <div class='mx-auto grid max-w-6xl items-center gap-8 lg:grid-cols-[1.05fr_0.95fr]'>
-      <div>
-        <p class='text-sm font-black uppercase tracking-[0.28em] text-blue'>
-          {content.eyebrow}
-        </p>
-        <h1
-          class='text-pink mt-6 font-heading text-7xl font-bold leading-[0.82] tracking-tight md:text-9xl'
-        >
-          {content.title}
-        </h1>
-        <p class='mt-8 max-w-2xl text-grey/75'>{content.intro}</p>
+  <section class='relative isolate pb-8 md:pb-24'>
+    <div
+      class='relative grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-[max(1.25rem,calc((100vw-72rem)/2+1.25rem))] lg:py-8'
+    >
+      <img
+        src={withBase('/images/ChezSandy.jpg')}
+        alt=''
+        class='absolute inset-0 hidden h-full w-full object-cover lg:block'
+      />
+      <div class='absolute inset-0 hidden bg-grey/45 backdrop-blur-[1px] lg:block'></div>
+      <div class='relative overflow-hidden p-7 lg:overflow-visible lg:p-0'>
+        <img
+          src={withBase('/images/ChezSandy.jpg')}
+          alt=''
+          class='absolute inset-0 h-full w-full scale-200 object-cover lg:hidden'
+        />
+        <div class='absolute inset-0 bg-grey/45 backdrop-blur-[1px] lg:hidden'></div>
+        <div class='relative'>
+          <p
+            class='text-sm font-black uppercase tracking-[0.28em] text-right lg:text-left text-white/70'
+          >
+            {content.eyebrow}
+          </p>
+          <h1
+            class='text-white mt-6 font-heading text-right lg:text-left text-7xl font-bold leading-[0.82] tracking-tight md:text-9xl'
+          >
+            {content.title}
+          </h1>
+          <p class='mt-8 max-w-2xl text-white/85'>{content.intro}</p>
+        </div>
       </div>
       <aside
-        class='relative overflow-hidden rounded-[3rem] border border-pink/25 shadow-xl shadow-pink/20'
+        class='mx-5 relative overflow-hidden rounded-[3rem] border border-pink/25 shadow-xl shadow-pink/20'
       >
         <div
           class='relative rounded-[2.3rem] border border-white/35 bg-white/82 p-7 backdrop-blur'
