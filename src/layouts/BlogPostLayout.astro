@@ -1,0 +1,41 @@
+---
+import type { CollectionEntry } from "astro:content";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { type Locale } from "@i18n/config";
+import { localizedRoutes, withBase } from "@i18n/routes";
+import { sharedText } from "@i18n/ui";
+
+interface Props {
+  post: CollectionEntry<"blog">;
+  Content: any;
+}
+
+const { post, Content } = Astro.props;
+const lang = post.data.lang as Locale;
+const canonicalPath = `${localizedRoutes.blog[lang]}${post.data.slug}/`;
+---
+
+<BaseLayout
+  title={post.data.title}
+  description={post.data.description}
+  lang={lang}
+  routeKey="blog"
+  canonicalPath={canonicalPath}
+  image={post.data.image}
+>
+  <article class="mx-auto max-w-3xl px-5 py-16">
+    <a href={withBase(localizedRoutes.blog[lang])} class="text-sm font-black uppercase tracking-[0.18em] text-grey/55 transition hover:text-pink">
+      ← {sharedText[lang].latestPosts}
+    </a>
+    <header class="mt-10">
+      <p class="text-sm font-bold uppercase tracking-[0.22em] text-blue">
+        {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
+      </p>
+      <h1 class="mt-5 font-heading text-6xl leading-[0.9] text-grey md:text-7xl">{post.data.title}</h1>
+      <p class="mt-6 text-xl leading-8 text-grey/75">{post.data.description}</p>
+    </header>
+    <div class="prose-workshop mt-12 border-t border-grey/10 pt-10">
+      <Content />
+    </div>
+  </article>
+</BaseLayout>

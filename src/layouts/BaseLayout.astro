@@ -1,0 +1,46 @@
+---
+import Header from '@components/Header.astro';
+import Footer from '@components/Footer.astro';
+import SEO from '@components/SEO.astro';
+import { type Locale, type RouteKey } from '@i18n/config';
+import { localizedRoutes, withBase } from '@i18n/routes';
+import '@styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Locale;
+  routeKey?: RouteKey;
+  canonicalPath?: string;
+  image?: string;
+}
+
+const { title, description, lang, routeKey = 'home', canonicalPath, image } = Astro.props;
+const alternates = localizedRoutes[routeKey];
+const path = canonicalPath ?? alternates[lang];
+---
+
+<!doctype html>
+<html lang={lang}>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='generator' content={Astro.generator} />
+    <link rel='icon' type='image/svg+xml' href={withBase('/favicon.ico')} />
+    <SEO
+      title={title}
+      description={description}
+      lang={lang}
+      canonicalPath={path}
+      alternates={alternates}
+      image={image}
+    />
+  </head>
+  <body>
+    <Header lang={lang} currentRoute={routeKey} />
+    <main>
+      <slot />
+    </main>
+    <Footer lang={lang} />
+  </body>
+</html>

@@ -1,0 +1,49 @@
+---
+import { getCollection } from "astro:content";
+import BaseLayout from "@layouts/BaseLayout.astro";
+import { type Locale } from "@i18n/config";
+import { localizedRoutes, withBase } from "@i18n/routes";
+import { sharedText, siteName } from "@i18n/ui";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const intro = {
+  en: "Ideas for creative workshops, local activities, and slow travel around Ericeira and Santa Cruz.",
+  fr: "Idées d'ateliers créatifs, activités locales et voyage lent autour d'Ericeira et Santa Cruz.",
+  pt: "Ideias para workshops criativos, atividades locais e viagens tranquilas pela Ericeira e Santa Cruz.",
+}[lang];
+const posts = (await getCollection("blog", ({ data }) => data.lang === lang && !data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
+);
+---
+
+<BaseLayout title={`${sharedText[lang].latestPosts} | ${siteName}`} description={intro} lang={lang} routeKey="blog">
+  <section class="mx-auto max-w-6xl px-5 py-20">
+    <p class="text-sm font-black uppercase tracking-[0.28em] text-blue">{sharedText[lang].latestPosts}</p>
+    <h1 class="mt-6 font-heading text-6xl leading-[0.88] text-grey md:text-8xl">Blog</h1>
+    <p class="mt-8 max-w-2xl text-xl leading-9 text-grey/75">{intro}</p>
+
+    <div class="mt-12 grid gap-5 md:grid-cols-2">
+      {
+        posts.map((post) => (
+          <article class="rounded-[2rem] border border-grey/10 bg-white/75 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
+            <p class="text-xs font-black uppercase tracking-[0.22em] text-blue">
+              {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
+            </p>
+            <h2 class="mt-5 font-heading text-4xl leading-none text-grey">{post.data.title}</h2>
+            <p class="mt-4 text-grey/70">{post.data.description}</p>
+            <div class="mt-5 flex flex-wrap gap-2">
+              {post.data.tags.map((tag) => <span class="rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75">{tag}</span>)}
+            </div>
+            <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="mt-7 inline-flex font-bold text-grey underline decoration-pink decoration-4 underline-offset-4">
+              {sharedText[lang].readMore}
+            </a>
+          </article>
+        ))
+      }
+    </div>
+  </section>
+</BaseLayout>

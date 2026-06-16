@@ -1,0 +1,39 @@
+---
+import { type Locale, type RouteKey } from "@i18n/config";
+import { localizedRoutes, withBase } from "@i18n/routes";
+import { navLabels, sharedText, siteName } from "@i18n/ui";
+
+interface Props {
+  lang: Locale;
+}
+
+const { lang } = Astro.props;
+const year = new Date().getFullYear();
+const links: RouteKey[] = ["ericeira", "santaCruz", "atHome", "blog"];
+---
+
+<footer class="mt-24 border-t border-pink/20 bg-pink text-grey">
+  <div class="mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_1fr]">
+    <div>
+      <p class="font-heading text-4xl">{siteName}</p>
+      <p class="mt-4 max-w-xl text-grey/75">
+        Creative workshops in Ericeira, Santa Cruz, and wherever your group gathers.
+      </p>
+      <a href="mailto:hello@example.com" class="mt-6 inline-flex rounded-full bg-white px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-pink transition hover:bg-yellow hover:text-grey">
+        {sharedText[lang].contactCta}
+      </a>
+    </div>
+    <nav class="flex flex-wrap items-start gap-3 md:justify-end" aria-label="Footer navigation">
+      {
+        links.map((link) => (
+          <a href={withBase(localizedRoutes[link][lang])} class="rounded-full border border-white/35 bg-white/20 px-4 py-2 text-sm font-bold text-grey/75 transition hover:border-white hover:bg-white/40 hover:text-grey">
+            {navLabels[lang][link]}
+          </a>
+        ))
+      }
+    </nav>
+  </div>
+  <div class="border-t border-white/25 px-5 py-5 text-center text-sm text-grey/65">
+    © {year} {siteName}
+  </div>
+</footer>

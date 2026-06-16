@@ -1,0 +1,37 @@
+---
+import { type Locale, type RouteKey } from "@i18n/config";
+import { localizedRoutes, withBase } from "@i18n/routes";
+import { sharedText, workshopContent } from "@i18n/ui";
+
+interface Props {
+  lang: Locale;
+  route: Exclude<RouteKey, "home" | "blog">;
+}
+
+const { lang, route } = Astro.props;
+const item = workshopContent[route][lang];
+const accentClass = {
+  pink: "bg-pink",
+  green: "bg-green",
+  yellow: "bg-yellow",
+  orange: "bg-orange",
+  blue: "bg-blue",
+}[item.accent];
+const borderClass = {
+  pink: "border-pink/35",
+  green: "border-green/45",
+  yellow: "border-yellow/55",
+  orange: "border-orange/45",
+  blue: "border-blue/45",
+}[item.accent];
+---
+
+<article class:list={["group relative overflow-hidden rounded-[2rem] border bg-white/75 p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-xl", borderClass]}>
+  <div class:list={["absolute right-5 top-5 size-20 rounded-full opacity-35 blur-xl transition group-hover:opacity-60", accentClass]}></div>
+  <p class="relative text-xs font-black uppercase tracking-[0.22em] text-pink">{item.eyebrow}</p>
+  <h3 class="relative mt-5 font-heading text-5xl font-bold leading-[0.9] text-pink">{item.title}</h3>
+  <p class="relative mt-5 text-grey/75">{item.intro}</p>
+  <a href={withBase(localizedRoutes[route][lang])} class="relative mt-7 inline-flex font-bold text-grey underline decoration-pink decoration-4 underline-offset-4">
+    {sharedText[lang].readMore}
+  </a>
+</article>

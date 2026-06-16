@@ -1,0 +1,46 @@
+---
+import { locales, type Locale } from "@i18n/config";
+import { withBase } from "@i18n/routes";
+
+interface Props {
+  title: string;
+  description: string;
+  lang: Locale;
+  canonicalPath: string;
+  alternates?: Partial<Record<Locale, string>>;
+  image?: string;
+}
+
+const {
+  title,
+  description,
+  lang,
+  canonicalPath,
+  alternates = {},
+  image = "/og.svg",
+} = Astro.props;
+
+const canonical = new URL(withBase(canonicalPath), Astro.site).toString();
+const imageUrl = new URL(withBase(image), Astro.site).toString();
+---
+
+<title>{title}</title>
+<meta name="description" content={description} />
+<link rel="canonical" href={canonical} />
+<meta property="og:type" content="website" />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:url" content={canonical} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content={lang} />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+{
+  locales.map((locale) => {
+    const path = alternates[locale];
+    return path ? <link rel="alternate" hreflang={locale} href={new URL(withBase(path), Astro.site).toString()} /> : null;
+  })
+}
+{alternates.en ? <link rel="alternate" hreflang="x-default" href={new URL(withBase(alternates.en), Astro.site).toString()} /> : null}
