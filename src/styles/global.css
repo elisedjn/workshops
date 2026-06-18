@@ -88,6 +88,14 @@ body {
   font-weight: 700;
 }
 
+.prose-blog h3 {
+  margin-top: 2rem;
+  font-size: clamp(1rem, 5vw, 2rem);
+  line-height: 1;
+  font-weight: 100;
+  font-style: italic;
+}
+
 .prose-blog p {
   margin-top: 1rem;
   font-size: 1.2rem;
@@ -102,4 +110,9 @@ body {
 
 .prose-blog li {
   margin-top: 0.5rem;
+}
+
+.prose-blog a {
+  color: var(--pink);
+  font-weight: 700;
 }

@@ -238,7 +238,7 @@ export const atHomeDetails: Record<
         name: 'Kintsugi',
         image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
       },
-      { name: '3D printed statues painting', image: '/images/ChezSandy.jpg' },
+      { name: '3D printed statues painting', image: '/images/Pokemon-June.png' },
     ],
     faqTitle: 'Practical questions',
     faqIntro: 'The essentials to plan your private workshop',

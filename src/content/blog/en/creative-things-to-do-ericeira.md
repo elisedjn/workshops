@@ -1,50 +1,74 @@
 ---
-title: '5 creative things to do in Ericeira'
-description: 'A gentle guide to creative activities in Ericeira, from watercolor and handmade workshops to local spaces that celebrate making.'
+title: '5 affordable creative things to do in Ericeira'
+description: 'Simple, playful and budget-friendly creative activities in Ericeira, from sand sculpture and photo safaris to watercolor workshops.'
 date: 2026-06-18
 lang: en
 slug: creative-things-to-do-ericeira
 tags:
   - Ericeira
-  - creative activities
-  - workshops
-  - slow travel
+  - Creative Activities
+  - Workshops
+  - Slow Travel
+  - Budget Activities
 draft: false
 image: /images/watercolor-workshop-ericeira-portugal.jpg
 ---
 
-Ericeira is known for surf, sea views, and slow village mornings, but it is also a beautiful place to make something with your hands. If you want a softer activity between beach time, coffee, and sunset walks, here are five creative things to do in Ericeira.
+_Ericeira, this little paradise for fishers and surfers, is full of inspiration for creative souls. You do not need to spend a fortune to have fun, dream a little, or create unique memories. Here are five simple, playful and affordable ideas to add a touch of art to your stay, or to your everyday life if you are lucky enough to live here._
 
-## 1. Join a watercolor workshop
+## 1. Sculpt sand like an ephemeral artist
 
-A watercolor session is a calm way to observe the colors of Ericeira: the blue of the ocean, the whitewashed streets, the tiles, the flowers, and the changing light. In the [Watercolor Tips & Tricks workshop](/workshops/ericeira/watercolor-tips-and-tricks-ericeira/), you explore simple techniques, experiment at your own rhythm, and create a handmade piece to take home.
+**Where?** Praia do Sul, or any other beach in Ericeira.
 
-No previous experience is needed, and all materials are included, so it is easy to join even if you are travelling light.
+**Why?** Because sand is the most accessible canvas in the world. Let your imagination take over: a castle, a boat, a dog, or even a little cartoon creature. The wind and the waves will do the rest, or erase everything in a blink.
 
-## 2. Make a dreamcatcher by hand
+Pay attention to the tide. Check the schedule before you start if you do not want your masterpiece to disappear too quickly.
 
-If you enjoy tactile, slow activities, a dreamcatcher workshop is a lovely way to spend an afternoon. You will work with hoops, threads, textures, beads, feathers, and small decorative details to create an object that feels personal.
+**WaterLili tip:** Bring a small bucket and shovel, or simply use your hands. Do not forget your camera so you can keep a memory before your sculpture returns to the ocean.
 
-The [Dreamcatcher workshop in Ericeira](/workshops/ericeira/dreamcatcher-workshop-ericeira/) is beginner-friendly and relaxed, with guidance at every step.
+## 2. Go on a photo safari through the village
 
-## 3. Repair a ceramic piece with kintsugi inspiration
+**Where?** In the narrow streets, around the harbor, or even on the beach.
 
-Most of us have a favorite mug, bowl, plate, or small ceramic object that broke and stayed in a cupboard waiting to be fixed one day. A kintsugi-inspired workshop gives that object a new story.
+**Why?** Ericeira is a perfect playground for beginner photographers. Seagulls, lazy cats, fishers' dogs, colorful doors, tiled walls, wooden sardines in souvenir shops... Everything can become a reason to capture local life.
 
-In the [Kintsugi workshop in Ericeira](/workshops/ericeira/kintsugi-workshop-ericeira/), you bring a ceramic piece from home, either already broken or one you are okay to break and rebuild during the session. The goal is not perfection: it is about care, repair, and turning cracks into golden details.
+Try giving yourself a creative challenge:
 
-## 4. Visit local creative spaces
+- **Only blue:** photograph every shade of blue in the village: doors, boats, sky, ocean.
+- **Textures:** look for peeling walls, fishing nets, shells, stones, tiles and wood.
 
-Creative energy also comes from the places where people gather. [JBay Collective](https://www.instagram.com/jbay_collective/) is one of the local spaces hosting creative moments in Ericeira, and it is worth following to see what is happening around the village.
+Share your photos with the hashtag **#CreativeEriceira**. Who knows, maybe your eye will be noticed.
 
-You can also explore [Tia Lie Casa Criativa](https://tialiecasacriativa.pt/), a creative house with workshops, handmade spirit, and inspiration for anyone who loves craft, color, and slow making.
+## 3. Sketch the colorful streets, even if you cannot draw
 
-## 5. Take your sketchbook for a slow village walk
+**Where?** Anywhere in the historic center, with its blue and white facades and small village details.
 
-You do not need a full studio setup to be creative in Ericeira. Take a sketchbook, a pencil, or a small watercolor kit and choose one simple subject: a tiled facade, a fishing boat, a café table, a door, a shell, or a corner of the beach.
+**Why?** A notebook, a pencil, and there you go: you leave with a unique handmade souvenir. You do not need to be a professional. The important thing is to play.
 
-Give yourself 20 minutes and draw without trying to make it perfect. The point is to notice more, slow down, and keep a small memory of the place.
+If you want a little support, [Petit Toucan](https://www.instagram.com/petittoucan/) sometimes organizes sketching sessions on Saturday mornings, which can be a lovely way to learn in a group.
 
-## A gentle creative pause in Ericeira
+**WaterLili tip:** Start with simple shapes: a window, a boat, a wave. Add details little by little. And if you want to go further, you can join my [watercolor workshop in Ericeira](/workshops/ericeira/watercolor-tips-and-tricks-ericeira/) to add color to your drawings.
 
-Whether you join a workshop, visit a creative space, or simply sit with a sketchbook by the ocean, Ericeira is a beautiful place to reconnect with making. Creativity does not need to be complicated: sometimes it is just a quiet table, a few materials, and enough time to enjoy the process.
+## 4. Paint outside after surf, or after a walk
+
+**Where?** On the beach, in a park, or even on a café terrace.
+
+**Why?** There is nothing more inspiring than Ericeira's energy after a surf session, a walk, or a long lunch. Organize a small painting session with friends: everyone brings some materials, or shares what they have, and you all paint the same view in your own way.
+
+**WaterLili tip:** If you prefer a more guided setting, we can create together a [personalised watercolor outside session](/workshops/at-home) with your group, perfect for discovering watercolor in a relaxed atmosphere.
+
+## 5. Treat yourself to a creative workshop
+
+**Where?** In the friendly, relaxed and creative atmosphere of JBay Collective.
+
+**Why?** A creative workshop is the perfect activity to pause, observe the landscape, and leave with something unique made by your own hands. Depending on the date, you can explore watercolor, dreamcatcher making, kintsugi-inspired repair, or another gentle handmade activity.
+
+**WaterLili tip:** [My workshops](/workshops/ericeira/) are designed so everyone can enjoy the moment, even complete beginners. We explore color, texture, slow making, and inspiration from the ocean, cliffs and streets of Ericeira.
+
+### So... Which activity will you try first?
+
+Ericeira is a blank canvas: whether you choose to sculpt, photograph, draw, paint or simply observe, the most important thing is to enjoy yourself.
+
+One small piece of advice: always carry a notebook or a camera. You never know when inspiration will arrive.
+
+Want to share your creations? Tag me on Instagram [@waterlilicreation](https://www.instagram.com/waterlilicreation/). I love seeing what you invent.
