@@ -1,7 +1,7 @@
 ---
 title: '5 affordable creative things to do in Ericeira'
 description: 'Simple, playful and budget-friendly creative activities in Ericeira, from sand sculpture and photo safaris to watercolor workshops.'
-date: 2026-06-18
+date: 2026-06-16
 lang: en
 slug: creative-things-to-do-ericeira
 tags:
@@ -11,7 +11,7 @@ tags:
   - Slow Travel
   - Budget Activities
 draft: false
-image: /images/waterlili-watercolor-workshop-ericeira-portugal.jpg
+image: /images/waterlili-cheap-creative-activities-ericeira-portugal.jpg
 ---
 
 _Ericeira, this little paradise for fishers and surfers, is full of inspiration for creative souls. You do not need to spend a fortune to have fun, dream a little, or create unique memories. Here are five simple, playful and affordable ideas to add a touch of art to your stay, or to your everyday life if you are lucky enough to live here._
