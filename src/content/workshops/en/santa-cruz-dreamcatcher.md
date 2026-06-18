@@ -19,6 +19,12 @@ draft: false
 image: '/images/dreamcatcher-workshop-santa-cruz-26-june-2026-portugal.jpg'
 ---
 
-This is a relaxed collage session with papers, color blocks, textures, and simple composition prompts.
+Join a **relaxed and tactile dreamcatcher workshop** in Santa Cruz with Waterlili. This creative 2-hour experience is designed for anyone who wants to **slow down, work with their hands, and create a meaningful handmade object** in a peaceful natural setting.
 
-It is a good fit for mixed groups because everyone can work at their own rhythm.
+The workshop takes place in the wonderful fields of **Cultivo Puro**, a little paradise full of flowers, fresh vegetables, and quiet corners to create close to nature.
+
+During the session, you will learn how to build your own dreamcatcher step by step using hoops, threads, textures, beads, feathers, and decorative details. You can follow a soft natural palette or make something more colorful and personal depending on your style.
+
+Begin with a guided explanation and live demonstration by the artist, followed by time to **weave, decorate, and personalize your own dreamcatcher** with personal support throughout the session.
+
+**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to try a slow handmade activity for the first time. **All materials are included**, and you will leave with your own **handmade dreamcatcher** and a gentle creative memory of Santa Cruz.

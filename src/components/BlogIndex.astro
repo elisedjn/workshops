@@ -1,9 +1,10 @@
 ---
-import { getCollection } from "astro:content";
-import BaseLayout from "@layouts/BaseLayout.astro";
-import { type Locale } from "@i18n/config";
-import { localizedRoutes, withBase } from "@i18n/routes";
-import { sharedText, siteName } from "@i18n/ui";
+import { getCollection } from 'astro:content';
+import LinkButton from '@components/LinkButton.astro';
+import BaseLayout from '@layouts/BaseLayout.astro';
+import { type Locale } from '@i18n/config';
+import { localizedRoutes, withBase } from '@i18n/routes';
+import { sharedText, siteName, homeContent } from '@i18n/ui';
 
 interface Props {
   lang: Locale;
@@ -11,50 +12,166 @@ interface Props {
 
 const { lang } = Astro.props;
 const intro = {
-  en: "Ideas for creative workshops, local activities, and slow travel around Ericeira and Santa Cruz.",
+  en: 'Ideas for creative workshops, local activities, and slow travel around Ericeira and Santa Cruz.',
   fr: "Idées d'ateliers créatifs, activités locales et voyage lent autour d'Ericeira et Santa Cruz.",
-  pt: "Ideias para workshops criativos, atividades locais e viagens tranquilas pela Ericeira e Santa Cruz.",
+  pt: 'Ideias para workshops criativos, atividades locais e viagens tranquilas pela Ericeira e Santa Cruz.',
 }[lang];
-const posts = (await getCollection("blog", ({ data }) => data.lang === lang && !data.draft)).sort(
-  (a, b) => b.data.date.valueOf() - a.data.date.valueOf(),
-);
+const filterText = {
+  en: {
+    showing: 'Showing articles tagged',
+    clear: 'Remove filter',
+    empty: 'No articles found with this tag yet.',
+  },
+  fr: {
+    showing: 'Articles avec le tag',
+    clear: 'Retirer le filtre',
+    empty: 'Aucun article trouvé avec ce tag pour le moment.',
+  },
+  pt: {
+    showing: 'Artigos com a tag',
+    clear: 'Remover filtro',
+    empty: 'Ainda não há artigos com esta tag.',
+  },
+}[lang];
+const content = homeContent[lang];
+const posts = (
+  await getCollection('blog', ({ data }) => data.lang === lang && !data.draft)
+).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+const blogHref = withBase(localizedRoutes.blog[lang]);
 ---
 
-<BaseLayout title={`${sharedText[lang].latestPosts} | ${siteName}`} description={intro} lang={lang} routeKey="blog">
-  <section class="mx-auto max-w-6xl px-5 py-20">
-    <p class="text-sm font-black uppercase tracking-[0.28em] text-blue">{sharedText[lang].latestPosts}</p>
-    <h1 class="mt-6 font-heading text-6xl leading-[0.88] text-grey md:text-8xl">Blog</h1>
-    <p class="mt-8 max-w-2xl text-xl leading-9 text-grey/75">{intro}</p>
+<BaseLayout
+  title={`${sharedText[lang].latestPosts} | ${siteName}`}
+  description={intro}
+  lang={lang}
+  routeKey='blog'
+>
+  <section class='mx-auto max-w-6xl px-5 py-20'>
+    <p class='text-sm font-black uppercase tracking-[0.28em] text-blue'>
+      {sharedText[lang].latestPosts}
+    </p>
+    <h1 class='mt-6 font-heading text-6xl leading-[0.88] text-grey md:text-8xl'>
+      {content.blogTitle}
+    </h1>
+    <p class='mt-8 max-w-4xl text-xl leading-9 text-grey/75'>{intro}</p>
 
-    <div class="mt-12 grid gap-5 md:grid-cols-2">
+    <div
+      id='active-tag-filter'
+      class='mt-8 hidden items-center justify-between gap-4 rounded-[1.5rem] bg-blue/15 p-5'
+      data-showing={filterText.showing}
+    >
+      <p class='font-bold text-grey'>
+        {filterText.showing}
+        <span
+          id='active-tag-name'
+          class='ml-2 rounded-full bg-white px-3 py-1 text-sm text-blue'
+        ></span>
+      </p>
+      <a
+        href={blogHref}
+        class='inline-flex shrink-0 items-center justify-center rounded-full bg-pink px-5 py-2 text-xs font-black uppercase tracking-[0.16em] text-white shadow-sm transition hover:-translate-y-0.5 hover:bg-orange'
+      >
+        {filterText.clear}
+      </a>
+    </div>
+
+    <div id='blog-posts-grid' class='mt-12 grid gap-5 md:grid-cols-2'>
       {
-        posts.map((post) => (
-          <article class="overflow-hidden rounded-[2rem] border border-grey/10 bg-white/75 shadow-sm transition hover:-translate-y-1 hover:shadow-xl">
-            {post.data.image ? (
-              <img src={withBase(post.data.image)} alt="" class="h-56 w-full object-cover" loading="lazy" />
-            ) : (
-              <div class="h-56 bg-pink/25 p-6">
-                <div class="grid h-full place-items-center rounded-[1.5rem] bg-white/45">
-                  <p class="font-heading text-5xl font-bold leading-none text-pink">{post.data.title}</p>
+        posts.map((post) => {
+          const href = withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`);
+
+          return (
+            <article
+              class='overflow-hidden rounded-[2rem] border border-grey/10 bg-white/75 shadow-sm transition hover:-translate-y-1 hover:shadow-xl'
+              data-blog-card
+              data-tags={post.data.tags.join('|')}
+            >
+              <a href={href} class='block group'>
+                {post.data.image ? (
+                  <img
+                    src={withBase(post.data.image)}
+                    alt=''
+                    class='h-56 w-full object-cover transition group-hover:scale-[1.02]'
+                    loading='lazy'
+                  />
+                ) : (
+                  <div class='h-56 bg-pink/25 p-6'>
+                    <div class='grid h-full place-items-center rounded-[1.5rem] bg-white/45'>
+                      <p class='font-heading text-5xl font-bold leading-none text-pink'>
+                        {post.data.title}
+                      </p>
+                    </div>
+                  </div>
+                )}
+                <div class='p-6 pb-0'>
+                  <p class='text-xs font-black uppercase tracking-[0.22em] text-blue'>
+                    {post.data.date.toLocaleDateString(lang, {
+                      month: 'long',
+                      day: 'numeric',
+                      year: 'numeric',
+                    })}
+                  </p>
+                  <h2 class='mt-5 font-heading text-4xl leading-none text-grey transition group-hover:text-pink'>
+                    {post.data.title}
+                  </h2>
+                  <p class='mt-4 text-grey/70'>{post.data.description}</p>
+                </div>
+              </a>
+              <div class='p-6'>
+                <div class='flex flex-wrap gap-2'>
+                  {post.data.tags.map((tag) => (
+                    <a
+                      href={`${blogHref}?tag=${encodeURIComponent(tag)}`}
+                      class='rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75 transition hover:bg-yellow hover:text-grey'
+                    >
+                      {tag}
+                    </a>
+                  ))}
+                </div>
+                <div class='mt-7'>
+                  <LinkButton href={href}>{sharedText[lang].readMore}</LinkButton>
                 </div>
               </div>
-            )}
-            <div class="p-6">
-              <p class="text-xs font-black uppercase tracking-[0.22em] text-blue">
-                {post.data.date.toLocaleDateString(lang, { month: "long", day: "numeric", year: "numeric" })}
-              </p>
-              <h2 class="mt-5 font-heading text-4xl leading-none text-grey">{post.data.title}</h2>
-              <p class="mt-4 text-grey/70">{post.data.description}</p>
-              <div class="mt-5 flex flex-wrap gap-2">
-                {post.data.tags.map((tag) => <span class="rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75">{tag}</span>)}
-              </div>
-              <a href={withBase(`${localizedRoutes.blog[lang]}${post.data.slug}/`)} class="mt-7 inline-flex font-bold text-grey underline decoration-pink decoration-4 underline-offset-4">
-                {sharedText[lang].readMore}
-              </a>
-            </div>
-          </article>
-        ))
+            </article>
+          );
+        })
       }
     </div>
+    <p id='empty-tag-filter' class='mt-10 hidden text-center font-bold text-grey/70'>
+      {filterText.empty}
+    </p>
   </section>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const activeTag = params.get('tag');
+    const activeFilter = document.querySelector<HTMLElement>('#active-tag-filter');
+    const activeTagName = document.querySelector<HTMLElement>('#active-tag-name');
+    const emptyMessage = document.querySelector<HTMLElement>('#empty-tag-filter');
+    const cards = Array.from(document.querySelectorAll<HTMLElement>('[data-blog-card]'));
+
+    if (activeTag) {
+      let visibleCards = 0;
+
+      activeFilter?.classList.remove('hidden');
+      activeFilter?.classList.add('flex');
+
+      if (activeTagName) {
+        activeTagName.textContent = activeTag;
+      }
+
+      cards.forEach((card) => {
+        const tags = card.dataset.tags?.split('|') ?? [];
+        const isVisible = tags.includes(activeTag);
+
+        card.classList.toggle('hidden', !isVisible);
+
+        if (isVisible) {
+          visibleCards += 1;
+        }
+      });
+
+      emptyMessage?.classList.toggle('hidden', visibleCards > 0);
+    }
+  </script>
 </BaseLayout>

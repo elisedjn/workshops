@@ -21,6 +21,10 @@ bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the Dreamcatcher Workshop in Ericeira on the 21st!'
 ---
 
-This workshop is an easy introduction to watercolor. We will explore simple washes, imperfect lines, and small compositions that can become postcards or keepsakes.
+Join a **relaxed and tactile dreamcatcher workshop** in Ericeira with Waterlili. This creative 2-hour experience is designed for anyone who wants to **slow down, work with their hands, and create a meaningful handmade object** in a warm atmosphere near the ocean.
 
-All materials are provided and no drawing experience is needed.
+During the session, you will learn how to build your own dreamcatcher step by step using hoops, threads, textures, beads, feathers, and decorative details. You can follow a soft natural palette or make something more colorful and personal depending on your style.
+
+Begin with a guided explanation and live demonstration by the artist, followed by time to **weave, decorate, and personalize your own dreamcatcher** with personal support throughout the session.
+
+**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to try a slow handmade activity for the first time. **All materials are included**, and you will leave with your own **handmade dreamcatcher** and a gentle creative memory of Ericeira.

@@ -73,3 +73,33 @@ body {
 .prose-workshop li {
   margin-top: 0.5rem;
 }
+
+
+.prose-blog {
+  color: var(--grey);
+  opacity: 0.9;
+}
+
+.prose-blog h2 {
+  margin-top: 2rem;
+  font-family: var(--font-heading);
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1;
+  font-weight: 700;
+}
+
+.prose-blog p {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+.prose-blog ul {
+  margin-top: 1rem;
+  list-style: disc;
+  padding-left: 1.25rem;
+}
+
+.prose-blog li {
+  margin-top: 0.5rem;
+}

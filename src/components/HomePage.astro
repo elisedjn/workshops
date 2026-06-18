@@ -19,7 +19,7 @@ const posts = (
   await getCollection('blog', ({ data }) => data.lang === lang && !data.draft)
 )
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
-  .slice(0, 3);
+  .slice(0, 2);
 const upcomingWorkshops = (
   await getCollection('workshops', ({ data }) => {
     return data.lang === lang && !data.draft && Boolean(data.startDate);
@@ -192,7 +192,11 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
             aboutParagraphs.map((paragraph) => (
               <p>
                 {paragraph.map((part) =>
-                  part.isBold ? <strong class='font-bold text-grey'>{part.text}</strong> : part.text
+                  part.isBold ? (
+                    <strong class='font-bold text-grey'>{part.text}</strong>
+                  ) : (
+                    part.text
+                  ),
                 )}
               </p>
             ))
@@ -202,18 +206,20 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
     </div>
   </section>
 
-  <section class='px-5 py-12'>
+  <section class='p-5'>
     <div
       class='mx-auto grid max-w-6xl gap-8 rounded-[2.5rem] bg-white/40 p-8 text-grey shadow-xl shadow-pink/20 md:grid-cols-[0.8fr_1.2fr] md:p-12'
     >
       <div>
-        <p class='text-sm font-black uppercase tracking-[0.24em] text-white'>
-          {sharedText[lang].latestPosts}
-        </p>
         <h2 class='mt-4 font-heading text-6xl font-bold leading-none'>
-          Journal for curious visitors.
+          {content.blogTitle}
         </h2>
         <p class='mt-5 text-grey/75'>{content.blogIntro}</p>
+        <div class='mt-7'>
+          <LinkButton href={withBase(localizedRoutes.blog[lang])} color='blue'>
+            {sharedText[lang].readMore}
+          </LinkButton>
+        </div>
       </div>
       <div class='grid gap-4'>
         {

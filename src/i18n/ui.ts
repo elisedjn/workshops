@@ -38,6 +38,7 @@ export const sharedText: Record<
     highlights: string;
     language: string;
     workshopDetails: string;
+    footerDescription: string;
   }
 > = {
   en: {
@@ -50,9 +51,11 @@ export const sharedText: Record<
     highlights: 'What to expect',
     language: 'Language',
     workshopDetails: 'Details',
+    footerDescription:
+      'Creative workshops in Ericeira, Santa Cruz, and wherever your group gathers.',
   },
   fr: {
-    bookCta: 'Organiser un atelier',
+    bookCta: 'Réserver',
     contactCta: 'Me contacter',
     readMore: 'Lire la suite',
     latestPosts: 'Derniers articles',
@@ -60,10 +63,12 @@ export const sharedText: Record<
     practicalInfo: 'Informations pratiques',
     highlights: "À quoi s'attendre",
     language: 'Langue',
-    workshopDetails: "Voir l'atelier",
+    workshopDetails: 'Détails',
+    footerDescription:
+      'Ateliers créatifs à Ericeira, Santa Cruz et partout où votre groupe se retrouve.',
   },
   pt: {
-    bookCta: 'Planear um workshop',
+    bookCta: 'Reservar',
     contactCta: 'Contactar',
     readMore: 'Ler mais',
     latestPosts: 'Últimos artigos',
@@ -71,7 +76,9 @@ export const sharedText: Record<
     practicalInfo: 'Detalhes práticos',
     highlights: 'O que esperar',
     language: 'Idioma',
-    workshopDetails: 'Ver workshop',
+    workshopDetails: 'Detalhes',
+    footerDescription:
+      'Workshops criativos na Ericeira, em Santa Cruz e onde quer que o seu grupo se reúna.',
   },
 };
 
@@ -84,6 +91,7 @@ export const homeContent: Record<
     title: string;
     intro: string;
     note: string;
+    blogTitle: string;
     blogIntro: string;
     locationTitle: string;
     locationIntro: string;
@@ -101,8 +109,9 @@ export const homeContent: Record<
     intro:
       'WaterLili offers gentle, joyful creative moments. Each session is a pause for you : relaxed, welcoming, and full of warmth.',
     note: 'Choose a location-based event or invite the workshop to your home for birthdays, holidays, family gatherings, and small group celebrations.',
+    blogTitle: 'Creativity Journal for Curious Visitors',
     blogIntro:
-      'The blog supports local SEO while sharing useful ideas for creative activities, seasonal inspiration, and things to do around the west coast of Portugal.',
+      'A small collection of creative ideas, gentle local guides, seasonal inspiration, and handmade moments to enjoy around Ericeira, Santa Cruz, and the west coast of Portugal.',
     locationTitle: 'Choose your location',
     locationIntro:
       'Join a workshop by the ocean or invite the creative table somewhere else.',
@@ -120,6 +129,7 @@ export const homeContent: Record<
     intro:
       'Waterlili Creation propose des moments créatifs à Ericeira, Santa Cruz et chez vous. Chaque atelier est pensé pour être simple, chaleureux et accessible.',
     note: "Choisissez un événement local ou invitez l'atelier chez vous pour un anniversaire, des vacances, une réunion de famille ou un petit groupe.",
+    blogTitle: 'Carnet pour visiteurs curieux.',
     blogIntro:
       "Le blog aide le référencement local tout en partageant des idées d'activités créatives, des inspirations saisonnières et des choses à faire sur la côte ouest du Portugal.",
     locationTitle: 'Choisissez votre lieu',
@@ -128,7 +138,7 @@ export const homeContent: Record<
     locationElsewhere: 'Ailleurs',
     aboutTitle: 'À propos',
     aboutText:
-      "Je crée des ateliers chaleureux et accessibles pour celles et ceux qui veulent ralentir, expérimenter et profiter du plaisir de faire avec leurs mains. L'objectif n'est pas la perfection, mais un moment créatif généreux autour de la table.",
+      "J'ai toujours été attirée par la création et les activités manuelles. Même si l'aquarelle est aujourd'hui mon médium principal, j'aime toujours **la magie de créer avec mes mains**. \n Ma mission ? **Remettre de la couleur et de la joie dans la vie des gens** grâce à la créativité. C'est pour cela que je crée des ateliers chaleureux et accessibles pour celles et ceux qui veulent ralentir, expérimenter et savourer le simple plaisir de faire. \n Ici, la perfection n'est pas le but : il s'agit de partager ensemble un **moment créatif généreux et sincère**.",
   },
   pt: {
     seoTitle: 'Workshops criativos na Ericeira, Santa Cruz e em casa',
@@ -139,6 +149,7 @@ export const homeContent: Record<
     intro:
       'Waterlili Creation leva momentos criativos à Ericeira, Santa Cruz e a casas particulares. Cada sessão é pensada para ser acolhedora, simples e fácil de participar.',
     note: 'Escolha um evento local ou convide o workshop para sua casa em aniversários, férias, encontros de família e pequenas celebrações.',
+    blogTitle: 'Diário para visitantes curiosos.',
     blogIntro:
       'O blog apoia o SEO local enquanto partilha ideias de atividades criativas, inspiração sazonal e sugestões do que fazer na costa oeste de Portugal.',
     locationTitle: 'Escolha o local',
@@ -147,7 +158,7 @@ export const homeContent: Record<
     locationElsewhere: 'Outro lugar',
     aboutTitle: 'Sobre mim',
     aboutText:
-      'Crio workshops acolhedores e acessíveis para quem quer abrandar, experimentar e desfrutar de fazer algo com as mãos. O foco não é a perfeição, mas um momento criativo generoso à volta da mesa.',
+      'Sempre me senti atraída por criar e fazer trabalhos manuais. Embora a aguarela seja hoje o meu principal meio, continuo a adorar **a magia de criar com as mãos**. \n A minha missão? **Trazer cor e alegria de volta à vida das pessoas** através da criatividade. É por isso que crio workshops acolhedores e acessíveis para quem quer abrandar, experimentar e saborear o simples prazer de fazer. \n Aqui, a perfeição não é o objetivo: o importante é partilhar um **momento criativo generoso e sincero**.',
   },
 };
 
@@ -295,7 +306,7 @@ export const atHomeDetails: Record<
       {
         question: "Où l'atelier peut-il avoir lieu ?",
         answer:
-          "Chez vous, dans votre location de vacances, un jardin, une terrasse ou un autre espace privé adapté. J'apporte la table créative à vous.",
+          "Chez vous, dans votre location de vacances, un jardin, une terrasse, un autre espace privé adapté ou même dans un parc public ou sur votre plage préférée... J'apporte la table créative à vous.",
       },
       {
         question: 'Le matériel est-il inclus ?',
@@ -350,7 +361,7 @@ export const atHomeDetails: Record<
       {
         question: 'Onde pode acontecer o workshop?',
         answer:
-          'Em sua casa, alojamento de férias, jardim, terraço ou outro espaço privado adequado. Levo a mesa criativa até si.',
+          'Em sua casa, alojamento de férias, jardim, terraço, outro espaço privado adequado ou até num parque público ou na sua praia preferida... Levo a mesa criativa até si.',
       },
       {
         question: 'Os materiais estão incluídos?',

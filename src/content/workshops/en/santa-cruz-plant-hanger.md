@@ -19,6 +19,12 @@ draft: false
 image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg'
 ---
 
-The workshop can be adapted to the age of the children and the size of the group.
+Join a **calm and creative macrame workshop** in Santa Cruz with Waterlili. This 2-hour session is a gentle introduction to knotting techniques and handmade decoration, designed for anyone who wants to **slow down, create with their hands, and make something beautiful for their home**.
 
-The goal is to make the activity simple, colorful, and enjoyable for everyone around the table.
+The workshop takes place in the wonderful fields of **Cultivo Puro**, a little paradise full of flowers, fresh vegetables, and quiet corners to create close to nature.
+
+During the session, you will learn simple macrame knots and use them to create your own **plant hanger** step by step. The rhythm is relaxed, and you will have time to practice, adjust, and personalize your piece.
+
+Begin with a guided explanation and live demonstration by the artist, followed by time to **knot, shape, and finish your own macrame plant hanger** with personal support throughout the session.
+
+**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to try macrame for the first time. **All materials are included**, and you will leave with your own **handmade plant hanger** and a peaceful creative memory of Santa Cruz.
