@@ -22,8 +22,46 @@ const routeKey =
       ? 'atHome'
       : 'ericeira';
 const canonicalPath = getWorkshopPath(workshop.data.location, lang, workshop.data.slug);
+const canonicalUrl = new URL(withBase(canonicalPath), Astro.site).toString();
 const parentPath = getWorkshopLocationPath(workshop.data.location, lang);
 const bookingUrl = getBookingHref(workshop.data.bookingUrl, workshop.data.bookingMessage);
+const imageUrl = workshop.data.image
+  ? new URL(withBase(workshop.data.image), Astro.site).toString()
+  : undefined;
+const seoAlternates = { [lang]: canonicalPath };
+const numericPrice = workshop.data.price?.match(/\d+(?:[.,]\d+)?/)?.[0]?.replace(',', '.');
+const eventSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Event',
+  name: workshop.data.title,
+  description: workshop.data.description,
+  url: canonicalUrl,
+  image: imageUrl,
+  inLanguage: lang,
+  eventAttendanceMode: 'https://schema.org/OfflineEventAttendanceMode',
+  eventStatus: 'https://schema.org/EventScheduled',
+  startDate: workshop.data.startDate?.toISOString(),
+  location: workshop.data.place
+    ? {
+        '@type': 'Place',
+        name: workshop.data.place,
+        address: workshop.data.address,
+      }
+    : undefined,
+  organizer: {
+    '@type': 'Organization',
+    name: siteName,
+  },
+  offers: workshop.data.price
+    ? {
+        '@type': 'Offer',
+        url: bookingUrl,
+        price: numericPrice,
+        priceCurrency: 'EUR',
+        availability: 'https://schema.org/InStock',
+      }
+    : undefined,
+};
 const labels = {
   en: {
     back: 'Back to workshops',
@@ -55,7 +93,9 @@ const labels = {
   lang={lang}
   routeKey={routeKey}
   canonicalPath={canonicalPath}
+  seoAlternates={seoAlternates}
   image={workshop.data.image}
+  jsonLd={eventSchema}
 >
   <article class='mx-auto max-w-5xl px-5 py-8 md:py-16'>
     <a
@@ -69,7 +109,7 @@ const labels = {
         workshop.data.image && (
           <img
             src={withBase(workshop.data.image)}
-            alt=''
+            alt={workshop.data.title}
             class='aspect-[16/9] w-full rounded-t-[2.1rem] object-cover shadow-lg shadow-grey/10'
           />
         )

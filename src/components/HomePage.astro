@@ -61,14 +61,14 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
       class='relative grid items-center gap-8 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,0.95fr)] lg:px-[max(1.25rem,calc((100vw-72rem)/2+1.25rem))] lg:py-8'
     >
       <img
-        src={withBase('/images/ChezSandy.jpg')}
+        src={withBase('/images/creative-watercolor-workshop-ericeira-portugal-hero.jpg')}
         alt=''
         class='absolute inset-0 hidden h-full w-full object-cover lg:block'
       />
       <div class='absolute inset-0 hidden bg-grey/45 backdrop-blur-[1px] lg:block'></div>
       <div class='relative overflow-hidden p-7 lg:overflow-visible lg:p-0'>
         <img
-          src={withBase('/images/ChezSandy.jpg')}
+          src={withBase('/images/creative-watercolor-workshop-ericeira-portugal-hero.jpg')}
           alt=''
           class='absolute inset-0 h-full w-full scale-200 object-cover lg:hidden'
         />
@@ -174,8 +174,8 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
       class='mx-auto max-w-6xl grid items-center gap-8 p-8 md:grid-cols-[14rem_1fr] md:p-10'
     >
       <img
-        src={withBase('/images/waterlili-watercolor-artist-workshop-organiser.jpg')}
-        alt=''
+        src={withBase('/images/waterlili-creation-founder-watercolor-workshop-portugal.jpg')}
+        alt='Waterlili Creation artist leading a watercolor workshop'
         class='mx-auto size-58 rounded-full object-cover object-top shadow-xl shadow-pink/15'
       />
       <div>
@@ -231,7 +231,7 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
               {post.data.image ? (
                 <img
                   src={withBase(post.data.image)}
-                  alt=''
+                  alt={post.data.title}
                   class='h-32 w-full rounded-[1rem] object-cover'
                   loading='lazy'
                 />

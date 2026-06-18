@@ -46,7 +46,7 @@ const labels = {
         workshop.data.image ? (
           <img
             src={withBase(workshop.data.image)}
-            alt=''
+            alt={workshop.data.title}
             class='absolute inset-0 h-full w-full object-cover'
             loading='lazy'
           />

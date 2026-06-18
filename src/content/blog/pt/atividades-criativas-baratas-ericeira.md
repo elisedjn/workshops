@@ -11,7 +11,7 @@ tags:
   - Viagem Lenta
   - Baixo Custo
 draft: false
-image: /images/watercolor-workshop-ericeira-portugal.jpg
+image: /images/waterlili-watercolor-workshop-ericeira-portugal.jpg
 ---
 
 _A Ericeira, este pequeno paraíso de pescadores e surfistas, está cheia de inspiração para almas criativas. Não é preciso gastar uma fortuna para se divertir, sonhar ou criar memórias únicas. Aqui ficam 5 ideias simples, lúdicas e acessíveis para acrescentar um toque de arte à sua estadia, ou ao seu dia a dia se tiver a sorte de viver aqui._

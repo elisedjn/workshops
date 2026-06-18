@@ -13,9 +13,22 @@ interface Props {
   routeKey?: RouteKey;
   canonicalPath?: string;
   image?: string;
+  seoType?: 'website' | 'article';
+  seoAlternates?: Partial<Record<Locale, string>>;
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
-const { title, description, lang, routeKey = 'home', canonicalPath, image } = Astro.props;
+const {
+  title,
+  description,
+  lang,
+  routeKey = 'home',
+  canonicalPath,
+  image,
+  seoType,
+  seoAlternates,
+  jsonLd,
+} = Astro.props;
 const alternates = localizedRoutes[routeKey];
 const path = canonicalPath ?? alternates[lang];
 ---
@@ -32,8 +45,10 @@ const path = canonicalPath ?? alternates[lang];
       description={description}
       lang={lang}
       canonicalPath={path}
-      alternates={alternates}
+      alternates={seoAlternates ?? alternates}
       image={image}
+      type={seoType}
+      jsonLd={jsonLd}
     />
   </head>
   <body>

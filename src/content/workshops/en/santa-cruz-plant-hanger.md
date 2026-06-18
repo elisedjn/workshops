@@ -16,7 +16,7 @@ address: |
   Povoa de Penafirme - Santa Cruz
 order: 1
 draft: false
-image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg'
+image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg'
 ---
 
 Join a **calm and creative macrame workshop** in Santa Cruz with Waterlili. This 2-hour session is a gentle introduction to knotting techniques and handmade decoration, designed for anyone who wants to **slow down, create with their hands, and make something beautiful for their home**.

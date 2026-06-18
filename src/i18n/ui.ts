@@ -33,9 +33,6 @@ export const sharedText: Record<
     contactCta: string;
     readMore: string;
     latestPosts: string;
-    allWorkshops: string;
-    practicalInfo: string;
-    highlights: string;
     language: string;
     workshopDetails: string;
     footerDescription: string;
@@ -46,9 +43,6 @@ export const sharedText: Record<
     contactCta: 'Contact me',
     readMore: 'Read more',
     latestPosts: 'Latest journal notes',
-    allWorkshops: 'Explore the workshops',
-    practicalInfo: 'Practical details',
-    highlights: 'What to expect',
     language: 'Language',
     workshopDetails: 'Details',
     footerDescription:
@@ -59,9 +53,6 @@ export const sharedText: Record<
     contactCta: 'Me contacter',
     readMore: 'Lire la suite',
     latestPosts: 'Derniers articles',
-    allWorkshops: 'Découvrir les ateliers',
-    practicalInfo: 'Informations pratiques',
-    highlights: "À quoi s'attendre",
     language: 'Langue',
     workshopDetails: 'Détails',
     footerDescription:
@@ -72,9 +63,6 @@ export const sharedText: Record<
     contactCta: 'Contactar',
     readMore: 'Ler mais',
     latestPosts: 'Últimos artigos',
-    allWorkshops: 'Explorar workshops',
-    practicalInfo: 'Detalhes práticos',
-    highlights: 'O que esperar',
     language: 'Idioma',
     workshopDetails: 'Detalhes',
     footerDescription:
@@ -90,7 +78,6 @@ export const homeContent: Record<
     eyebrow: string;
     title: string;
     intro: string;
-    note: string;
     blogTitle: string;
     blogIntro: string;
     locationTitle: string;
@@ -108,7 +95,6 @@ export const homeContent: Record<
     title: 'Slow, joyful workshops for curious hands.',
     intro:
       'WaterLili offers gentle, joyful creative moments. Each session is a pause for you : relaxed, welcoming, and full of warmth.',
-    note: 'Choose a location-based event or invite the workshop to your home for birthdays, holidays, family gatherings, and small group celebrations.',
     blogTitle: 'Creativity Journal for Curious Visitors',
     blogIntro:
       'A small collection of creative ideas, gentle local guides, seasonal inspiration, and handmade moments to enjoy around Ericeira, Santa Cruz, and the west coast of Portugal.',
@@ -128,10 +114,9 @@ export const homeContent: Record<
     title: 'Des ateliers doux et joyeux pour les mains curieuses.',
     intro:
       'Waterlili Creation propose des moments créatifs à Ericeira, Santa Cruz et chez vous. Chaque atelier est pensé pour être simple, chaleureux et accessible.',
-    note: "Choisissez un événement local ou invitez l'atelier chez vous pour un anniversaire, des vacances, une réunion de famille ou un petit groupe.",
-    blogTitle: 'Carnet pour visiteurs curieux.',
+    blogTitle: 'Carnet créatif pour visiteurs curieux',
     blogIntro:
-      "Le blog aide le référencement local tout en partageant des idées d'activités créatives, des inspirations saisonnières et des choses à faire sur la côte ouest du Portugal.",
+      "Une petite collection d'idées créatives, de guides locaux tout doux, d'inspirations saisonnières et de moments faits main à vivre autour d'Ericeira, Santa Cruz et la côte ouest du Portugal.",
     locationTitle: 'Choisissez votre lieu',
     locationIntro:
       "Rejoignez un atelier près de l'océan ou invitez la table créative ailleurs.",
@@ -148,10 +133,9 @@ export const homeContent: Record<
     title: 'Workshops tranquilos e alegres para mãos curiosas.',
     intro:
       'Waterlili Creation leva momentos criativos à Ericeira, Santa Cruz e a casas particulares. Cada sessão é pensada para ser acolhedora, simples e fácil de participar.',
-    note: 'Escolha um evento local ou convide o workshop para sua casa em aniversários, férias, encontros de família e pequenas celebrações.',
-    blogTitle: 'Diário para visitantes curiosos.',
+    blogTitle: 'Diário Criativo para Visitantes Curiosos',
     blogIntro:
-      'O blog apoia o SEO local enquanto partilha ideias de atividades criativas, inspiração sazonal e sugestões do que fazer na costa oeste de Portugal.',
+      'Uma pequena coleção de ideias criativas, guias locais tranquilos, inspiração sazonal e momentos feitos à mão para desfrutar na Ericeira, em Santa Cruz e na costa oeste de Portugal.',
     locationTitle: 'Escolha o local',
     locationIntro:
       'Participe num workshop junto ao mar ou convide a mesa criativa para outro lugar.',
@@ -214,7 +198,6 @@ export const atHomeDetails: Record<
   Locale,
   {
     offerTitle: string;
-    offerIntro: string;
     workshops: { name: string; image: string }[];
     faqTitle: string;
     faqIntro: string;
@@ -223,22 +206,21 @@ export const atHomeDetails: Record<
 > = {
   en: {
     offerTitle: 'Workshops I can bring to you',
-    offerIntro: 'Choose the creative activity that fits your group, mood, and space.',
     workshops: [
-      { name: 'Watercolor', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      { name: 'Watercolor', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
       {
         name: 'Dreamcatcher',
-        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+        image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
       },
       {
         name: 'Macrame plant hanger',
-        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+        image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg',
       },
       {
         name: 'Kintsugi',
-        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+        image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: '3D printed statues painting', image: '/images/Pokemon-June.png' },
+      { name: '3D printed statues painting', image: '/images/3d-printed-statue-painting-workshop-portugal.png' },
     ],
     faqTitle: 'Practical questions',
     faqIntro: 'The essentials to plan your private workshop',
@@ -277,23 +259,21 @@ export const atHomeDetails: Record<
   },
   fr: {
     offerTitle: 'Les ateliers que je peux apporter chez vous',
-    offerIntro:
-      "Choisissez l'activité créative qui correspond à votre groupe, votre ambiance et votre espace.",
     workshops: [
-      { name: 'Aquarelle', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      { name: 'Aquarelle', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
       {
         name: 'Attrape-rêves',
-        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+        image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
       },
       {
         name: 'Suspension pour plante en macramé',
-        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+        image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg',
       },
       {
         name: 'Kintsugi',
-        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+        image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: 'Peinture de statues imprimées en 3D', image: '/images/ChezSandy.jpg' },
+      { name: 'Peinture de statues imprimées en 3D', image: '/images/3d-printed-statue-painting-workshop-portugal.png' },
     ],
     faqTitle: 'Questions pratiques',
     faqIntro: 'Les informations essentielles avant de préparer votre atelier privé.',
@@ -332,23 +312,21 @@ export const atHomeDetails: Record<
   },
   pt: {
     offerTitle: 'Workshops que posso levar até si',
-    offerIntro:
-      'Escolha a atividade criativa que combina melhor com o grupo, o ambiente e o espaço.',
     workshops: [
-      { name: 'Aguarela', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      { name: 'Aguarela', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
       {
         name: 'Caça-sonhos',
-        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+        image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
       },
       {
         name: 'Suporte de planta em macramé',
-        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+        image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg',
       },
       {
         name: 'Kintsugi',
-        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+        image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: 'Pintura de estátuas impressas em 3D', image: '/images/ChezSandy.jpg' },
+      { name: 'Pintura de estátuas impressas em 3D', image: '/images/3d-printed-statue-painting-workshop-portugal.png' },
     ],
     faqTitle: 'Perguntas práticas',
     faqIntro: 'O essencial antes de planear o seu workshop privado.',
@@ -398,8 +376,6 @@ export const workshopContent: Record<
       title: string;
       intro: string;
       accent: 'pink' | 'green' | 'yellow' | 'orange' | 'blue';
-      highlights: string[];
-      practical: string[];
     }
   >
 > = {
@@ -413,16 +389,6 @@ export const workshopContent: Record<
       intro:
         'Join a small-group workshop in Ericeira to connect with your creativity in a welcoming atmosphere.',
       accent: 'pink',
-      highlights: [
-        'Small groups',
-        'Beginner-friendly guidance',
-        'Seasonal creative themes',
-      ],
-      practical: [
-        'Location: Ericeira',
-        'Languages: English, French, Portuguese',
-        'Format: public events or private groups',
-      ],
     },
     fr: {
       seoTitle: 'Ateliers créatifs à Ericeira',
@@ -433,16 +399,6 @@ export const workshopContent: Record<
       intro:
         'Participez à un atelier en petit groupe à Ericeira, avec un rythme doux, des matières tactiles et une ambiance accueillante.',
       accent: 'blue',
-      highlights: [
-        'Petits groupes',
-        'Accessible aux débutants',
-        'Thèmes créatifs de saison',
-      ],
-      practical: [
-        'Lieu : Ericeira',
-        'Langues : anglais, français, portugais',
-        'Format : événements publics ou groupes privés',
-      ],
     },
     pt: {
       seoTitle: 'Workshops criativos na Ericeira',
@@ -453,16 +409,6 @@ export const workshopContent: Record<
       intro:
         'Participe num workshop em pequeno grupo na Ericeira, com ritmo calmo, materiais táteis e uma atmosfera acolhedora.',
       accent: 'blue',
-      highlights: [
-        'Pequenos grupos',
-        'Adequado para iniciantes',
-        'Temas criativos sazonais',
-      ],
-      practical: [
-        'Local: Ericeira',
-        'Idiomas: inglês, francês, português',
-        'Formato: eventos públicos ou grupos privados',
-      ],
     },
   },
   santaCruz: {
@@ -475,16 +421,6 @@ export const workshopContent: Record<
       intro:
         'Come and explore your creativity during a small-group session with gentle guidance : a memorable activity close to the beach.',
       accent: 'yellow',
-      highlights: [
-        'Coastal setting',
-        'Flexible themes',
-        'Great for families and holiday groups',
-      ],
-      practical: [
-        'Location: Santa Cruz',
-        'Languages: English, French, Portuguese',
-        'Format: seasonal events and private bookings',
-      ],
     },
     fr: {
       seoTitle: 'Ateliers créatifs à Santa Cruz, Portugal',
@@ -495,16 +431,6 @@ export const workshopContent: Record<
       intro:
         'Les ateliers à Santa Cruz sont pensés pour les groupes qui souhaitent une activité simple, chaleureuse et proche de la plage.',
       accent: 'yellow',
-      highlights: [
-        'Cadre côtier',
-        'Thèmes flexibles',
-        'Idéal pour familles et groupes en vacances',
-      ],
-      practical: [
-        'Lieu : Santa Cruz',
-        'Langues : anglais, français, portugais',
-        'Format : événements saisonniers et réservations privées',
-      ],
     },
     pt: {
       seoTitle: 'Workshops criativos em Santa Cruz, Portugal',
@@ -515,16 +441,6 @@ export const workshopContent: Record<
       intro:
         'As sessões criativas em Santa Cruz são pensadas para grupos descontraídos que querem uma atividade memorável junto à praia.',
       accent: 'yellow',
-      highlights: [
-        'Ambiente costeiro',
-        'Temas flexíveis',
-        'Ótimo para famílias e grupos de férias',
-      ],
-      practical: [
-        'Local: Santa Cruz',
-        'Idiomas: inglês, francês, português',
-        'Formato: eventos sazonais e reservas privadas',
-      ],
     },
   },
   atHome: {
@@ -537,17 +453,6 @@ export const workshopContent: Record<
       intro:
         'At-home workshops are flexible private sessions for families, friends, birthdays, bachelorette parties, and cozy celebrations across the local area.',
       accent: 'pink',
-      highlights: [
-        'Private format',
-        'Adapted to your group',
-        'Materials can be brought to you',
-      ],
-      practical: [
-        'Location: your home or holiday rental',
-        'Group size: 3 to 8 people',
-        'Kids from 6 years old and adults',
-        'Any level welcome: I adapt to your group',
-      ],
     },
     fr: {
       seoTitle: 'Ateliers créatifs à domicile au Portugal',
@@ -558,17 +463,6 @@ export const workshopContent: Record<
       intro:
         'Les ateliers à domicile sont des sessions privées et flexibles pour familles, amis, anniversaires et moments conviviaux.',
       accent: 'pink',
-      highlights: [
-        'Format privé',
-        'Adapté à votre groupe',
-        'Le matériel peut venir à vous',
-      ],
-      practical: [
-        'Lieu : chez vous ou dans votre location',
-        'Taille du groupe : 3 à 8 personnes',
-        'Enfants à partir de 6 ans et adultes',
-        "Tous niveaux bienvenus : j'adapte au groupe",
-      ],
     },
     pt: {
       seoTitle: 'Workshops criativos em casa em Portugal',
@@ -579,17 +473,6 @@ export const workshopContent: Record<
       intro:
         'Os workshops em casa são sessões privadas e flexíveis para famílias, amigos, aniversários e celebrações acolhedoras.',
       accent: 'pink',
-      highlights: [
-        'Formato privado',
-        'Adaptado ao grupo',
-        'Os materiais podem ir até si',
-      ],
-      practical: [
-        'Local: casa ou alojamento de férias',
-        'Grupo: 3 a 8 pessoas',
-        'Crianças a partir dos 6 anos e adultos',
-        'Todos os níveis: adapto ao grupo',
-      ],
     },
   },
 };

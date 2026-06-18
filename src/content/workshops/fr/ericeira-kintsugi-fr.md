@@ -16,7 +16,7 @@ address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 3
 draft: false
-image: /images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg
+image: /images/waterlili-kintsugi-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: "Bonjour, j'aimerais participer à l'atelier kintsugi à Ericeira le 28 juin !"
 ---

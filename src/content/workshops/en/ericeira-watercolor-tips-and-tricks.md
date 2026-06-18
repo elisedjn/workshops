@@ -16,7 +16,7 @@ address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 1
 draft: false
-image: /images/watercolor-workshop-ericeira-portugal.jpg
+image: /images/waterlili-watercolor-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the next Watercolor Tips & Tricks session in Ericeira!'
 ---

@@ -90,7 +90,7 @@ const blogHref = withBase(localizedRoutes.blog[lang]);
                 {post.data.image ? (
                   <img
                     src={withBase(post.data.image)}
-                    alt=''
+                    alt={post.data.title}
                     class='h-56 w-full object-cover transition group-hover:scale-[1.02]'
                     loading='lazy'
                   />

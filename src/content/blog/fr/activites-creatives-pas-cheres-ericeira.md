@@ -11,7 +11,7 @@ tags:
   - Voyage Lent
   - Petit Budget
 draft: false
-image: /images/watercolor-workshop-ericeira-portugal.jpg
+image: /images/waterlili-watercolor-workshop-ericeira-portugal.jpg
 ---
 
 _Ericeira, ce petit paradis de pêcheurs et de surfeurs, regorge d'inspiration pour les âmes créatives. Pas besoin de dépenser une fortune pour s'amuser, rêver ou créer des souvenirs uniques. Voici 5 idées simples, ludiques et accessibles pour ajouter une touche d'art à ton séjour, ou à ta vie quotidienne si tu as la chance d'y vivre._

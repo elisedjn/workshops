@@ -16,7 +16,7 @@ address: |
   Povoa de Penafirme - Santa Cruz
 order: 2
 draft: false
-image: '/images/dreamcatcher-workshop-santa-cruz-26-june-2026-portugal.jpg'
+image: '/images/waterlili-dreamcatcher-workshop-santa-cruz-portugal.jpg'
 ---
 
 Participez à un **atelier attrape-rêves détendu et tactile** à Santa Cruz avec Waterlili. Cette expérience créative de 2 heures est pensée pour celles et ceux qui souhaitent **ralentir, créer avec leurs mains et fabriquer un objet fait main plein de sens** dans un cadre naturel paisible.

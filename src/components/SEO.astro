@@ -1,6 +1,8 @@
 ---
 import { locales, type Locale } from "@i18n/config";
 import { withBase } from "@i18n/routes";
+import { contactLinks } from "@config/contact";
+import { siteName } from "@i18n/ui";
 
 interface Props {
   title: string;
@@ -9,6 +11,8 @@ interface Props {
   canonicalPath: string;
   alternates?: Partial<Record<Locale, string>>;
   image?: string;
+  type?: "website" | "article";
+  jsonLd?: Record<string, unknown> | Record<string, unknown>[];
 }
 
 const {
@@ -17,22 +21,54 @@ const {
   lang,
   canonicalPath,
   alternates = {},
-  image = "/og.svg",
+  image = "/images/waterlili-watercolor-workshop-ericeira-portugal.jpg",
+  type = "website",
+  jsonLd,
 } = Astro.props;
 
 const canonical = new URL(withBase(canonicalPath), Astro.site).toString();
 const imageUrl = new URL(withBase(image), Astro.site).toString();
+const localeMap: Record<Locale, string> = {
+  en: "en_US",
+  fr: "fr_FR",
+  pt: "pt_PT",
+};
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: siteName,
+  url: new URL(withBase("/"), Astro.site).toString(),
+  logo: new URL(withBase("/images/waterlili-creation-logo.png"), Astro.site).toString(),
+  sameAs: [contactLinks.instagram, contactLinks.facebook, contactLinks.kofi],
+};
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  name: siteName,
+  url: new URL(withBase("/"), Astro.site).toString(),
+  inLanguage: lang,
+};
+const schemas = [
+  organizationSchema,
+  websiteSchema,
+  ...(Array.isArray(jsonLd) ? jsonLd : jsonLd ? [jsonLd] : []),
+];
 ---
 
 <title>{title}</title>
 <meta name="description" content={description} />
+<meta name="robots" content="index, follow" />
+<meta name="author" content={siteName} />
+<meta name="theme-color" content="#eb9d8a" />
 <link rel="canonical" href={canonical} />
-<meta property="og:type" content="website" />
+<meta property="og:type" content={type} />
+<meta property="og:site_name" content={siteName} />
 <meta property="og:title" content={title} />
 <meta property="og:description" content={description} />
 <meta property="og:url" content={canonical} />
 <meta property="og:image" content={imageUrl} />
-<meta property="og:locale" content={lang} />
+<meta property="og:image:alt" content={title} />
+<meta property="og:locale" content={localeMap[lang]} />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:title" content={title} />
 <meta name="twitter:description" content={description} />
@@ -44,3 +80,4 @@ const imageUrl = new URL(withBase(image), Astro.site).toString();
   })
 }
 {alternates.en ? <link rel="alternate" hreflang="x-default" href={new URL(withBase(alternates.en), Astro.site).toString()} /> : null}
+<script type="application/ld+json" is:inline set:html={JSON.stringify(schemas)} />

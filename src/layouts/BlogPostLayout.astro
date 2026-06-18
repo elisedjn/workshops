@@ -3,7 +3,7 @@ import type { CollectionEntry } from 'astro:content';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { type Locale } from '@i18n/config';
 import { localizedRoutes, withBase } from '@i18n/routes';
-import { sharedText } from '@i18n/ui';
+import { sharedText, siteName } from '@i18n/ui';
 
 interface Props {
   post: CollectionEntry<'blog'>;
@@ -13,6 +13,31 @@ interface Props {
 const { post, Content } = Astro.props;
 const lang = post.data.lang as Locale;
 const canonicalPath = `${localizedRoutes.blog[lang]}${post.data.slug}/`;
+const canonicalUrl = new URL(withBase(canonicalPath), Astro.site).toString();
+const imageUrl = post.data.image
+  ? new URL(withBase(post.data.image), Astro.site).toString()
+  : undefined;
+const seoAlternates = { [lang]: canonicalPath };
+const articleSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BlogPosting',
+  headline: post.data.title,
+  description: post.data.description,
+  datePublished: post.data.date.toISOString(),
+  dateModified: post.data.date.toISOString(),
+  inLanguage: lang,
+  url: canonicalUrl,
+  image: imageUrl,
+  keywords: post.data.tags,
+  author: {
+    '@type': 'Organization',
+    name: siteName,
+  },
+  publisher: {
+    '@type': 'Organization',
+    name: siteName,
+  },
+};
 ---
 
 <BaseLayout
@@ -21,7 +46,10 @@ const canonicalPath = `${localizedRoutes.blog[lang]}${post.data.slug}/`;
   lang={lang}
   routeKey='blog'
   canonicalPath={canonicalPath}
+  seoType='article'
+  seoAlternates={seoAlternates}
   image={post.data.image}
+  jsonLd={articleSchema}
 >
   <article class='mx-auto max-w-3xl px-5 py-16'>
     <a
@@ -49,7 +77,7 @@ const canonicalPath = `${localizedRoutes.blog[lang]}${post.data.slug}/`;
       post.data.image && (
         <img
           src={withBase(post.data.image)}
-          alt=''
+          alt={post.data.title}
           class='mt-10 aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl shadow-pink/15'
         />
       )
