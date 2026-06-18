@@ -47,7 +47,7 @@ Partage tes clichés avec le hashtag **#EriceiraCréative**. Qui sait, peut-êtr
 
 Si tu veux un coup de pouce, [Petit Toucan](https://www.instagram.com/petittoucan/) organise parfois des ateliers de croquis le samedi matin, parfaits pour apprendre en groupe.
 
-**Astuce WaterLili :** Commence par des formes simples : une fenêtre, un bateau, une vague. Ajoute les détails au fur et à mesure. Et si tu veux aller plus loin, viens tester mon [atelier d'aquarelle à Ericeira](/workshops/fr/ericeira/aquarelle-trucs-et-astuces-ericeira/) pour ajouter de la couleur à tes dessins.
+**Astuce WaterLili :** Commence par des formes simples : une fenêtre, un bateau, une vague. Ajoute les détails au fur et à mesure. Et si tu veux aller plus loin, viens tester mon [atelier d'aquarelle à Ericeira](/fr/ericeira/aquarelle-trucs-et-astuces-ericeira/) pour ajouter de la couleur à tes dessins.
 
 ## 4. Peindre en plein air après le surf, ou après une balade
 
@@ -55,7 +55,7 @@ Si tu veux un coup de pouce, [Petit Toucan](https://www.instagram.com/petittouca
 
 **Pourquoi ?** Il n'y a rien de plus inspirant que l'énergie d'Ericeira après une session de surf, une balade ou un long déjeuner. Organise une séance de peinture collective avec tes amis : chacun apporte son matériel, ou partage ce qu'il a, et tout le monde peint la même vue à sa manière.
 
-**Astuce WaterLili :** Si tu préfères un cadre plus guidé, nous pouvons créer ensemble une [session d'aquarelle personnalisée en extérieur](/workshops/fr/ateliers-a-domicile/) avec ton groupe, parfaite pour découvrir l'aquarelle dans une ambiance détendue.
+**Astuce WaterLili :** Si tu préfères un cadre plus guidé, nous pouvons créer ensemble une [session d'aquarelle personnalisée en extérieur](/fr/ateliers-a-domicile/) avec ton groupe, parfaite pour découvrir l'aquarelle dans une ambiance détendue.
 
 ## 5. S'offrir un atelier créatif
 
@@ -63,7 +63,7 @@ Si tu veux un coup de pouce, [Petit Toucan](https://www.instagram.com/petittouca
 
 **Pourquoi ?** Un atelier créatif est l'activité parfaite pour faire une pause, observer les paysages et repartir avec quelque chose d'unique créé de tes propres mains. Selon les dates, tu peux explorer l'aquarelle, la création d'attrape-rêves, la réparation inspirée du kintsugi ou une autre activité douce et faite main.
 
-**Astuce WaterLili :** [Mes ateliers](/workshops/fr/ericeira/) sont pensés pour que tout le monde profite du moment, même les débutants complets. On explore les couleurs, les textures, la création lente et l'inspiration venue de l'océan, des falaises et des ruelles d'Ericeira.
+**Astuce WaterLili :** [Mes ateliers](/fr/ericeira/) sont pensés pour que tout le monde profite du moment, même les débutants complets. On explore les couleurs, les textures, la création lente et l'inspiration venue de l'océan, des falaises et des ruelles d'Ericeira.
 
 ### Alors... Quelle activité vas-tu tester en premier ?
 

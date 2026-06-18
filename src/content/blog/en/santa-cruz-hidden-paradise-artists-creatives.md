@@ -54,7 +54,7 @@ If you have always wanted to try watercolor, macrame, dreamcatcher making or ano
 
 Between [@supercoolminds](https://www.instagram.com/supercoolminds/), an inspiring community around art and creativity, and my workshops in the fields of Cultivo Puro, you can find your tribe: people who, like you, see beauty everywhere and want to share it.
 
-At [Cultivo Puro](/workshops/santa-cruz/), the workshops take place in a **little paradise of flowers, fresh vegetables and nature**. It is a simple, living and gentle setting to create with your hands.
+At [Cultivo Puro](/santa-cruz/), the workshops take place in a **little paradise of flowers, fresh vegetables and nature**. It is a simple, living and gentle setting to create with your hands.
 
 Here, **art is not reserved for an elite**. Whether you are a complete beginner or already creative, you are welcome. And who knows? Maybe your next little masterpiece will be born between two waves, somewhere in Santa Cruz.
 
@@ -66,4 +66,4 @@ One small piece of advice: always carry a notebook or a camera. You never know w
 
 Want to share your creations? Tag me on Instagram [@waterlilicreation](https://www.instagram.com/waterlilicreation/). I love seeing what you invent.
 
-PS: if you want more creative ideas, you can also read [5 affordable creative things to do in Ericeira](/workshops/blog/creative-things-to-do-ericeira/).
+PS: if you want more creative ideas, you can also read [5 affordable creative things to do in Ericeira](/blog/creative-things-to-do-ericeira/).

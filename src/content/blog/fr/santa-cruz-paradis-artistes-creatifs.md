@@ -54,7 +54,7 @@ Si tu as toujours rêvé de te lancer dans l'aquarelle, le macramé, les attrape
 
 Entre [@supercoolminds](https://www.instagram.com/supercoolminds/), une communauté inspirante autour de l'art et de la créativité, et mes ateliers dans les champs de Cultivo Puro, tu peux trouver ta tribu : ces personnes qui, comme toi, voient la beauté partout et ont envie de la partager.
 
-À [Cultivo Puro](/workshops/fr/santa-cruz/), les ateliers se déroulent dans un **petit paradis de fleurs, de légumes frais et de nature**. C'est un cadre simple, vivant et très doux pour créer avec ses mains.
+À [Cultivo Puro](/fr/santa-cruz/), les ateliers se déroulent dans un **petit paradis de fleurs, de légumes frais et de nature**. C'est un cadre simple, vivant et très doux pour créer avec ses mains.
 
 Ici, **l'art n'est pas réservé à une élite**. Que tu sois débutant·e ou confirmé·e, tu es bienvenu·e. Et qui sait ? Peut-être que ton prochain chef-d'œuvre naîtra entre deux vagues, sur une plage de Santa Cruz.
 
@@ -66,4 +66,4 @@ Un conseil : emporte toujours un carnet ou un appareil photo. On ne sait jamais 
 
 Envie de partager tes créations ? Taggue-moi sur Instagram [@waterlilicreation](https://www.instagram.com/waterlilicreation/). J'adore voir ce que vous inventez.
 
-PS : si tu veux d'autres idées créatives, tu peux aussi lire [5 activités créatives et pas chères à faire à Ericeira](/workshops/fr/blog/activites-creatives-pas-cheres-ericeira/).
+PS : si tu veux d'autres idées créatives, tu peux aussi lire [5 activités créatives et pas chères à faire à Ericeira](/fr/blog/activites-creatives-pas-cheres-ericeira/).

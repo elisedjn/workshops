@@ -47,7 +47,7 @@ Partilhe as suas fotografias com a hashtag **#EriceiraCriativa**. Quem sabe, tal
 
 Se quiser um pouco de apoio, a [Petit Toucan](https://www.instagram.com/petittoucan/) organiza por vezes sessões de desenho aos sábados de manhã, perfeitas para aprender em grupo.
 
-**Dica WaterLili:** Comece por formas simples: uma janela, um barco, uma onda. Acrescente detalhes aos poucos. E se quiser ir mais longe, venha experimentar o meu [workshop de aguarela na Ericeira](/workshops/pt/ericeira/aguarela-dicas-e-tecnicas-ericeira/) para adicionar cor aos seus desenhos.
+**Dica WaterLili:** Comece por formas simples: uma janela, um barco, uma onda. Acrescente detalhes aos poucos. E se quiser ir mais longe, venha experimentar o meu [workshop de aguarela na Ericeira](/pt/ericeira/aguarela-dicas-e-tecnicas-ericeira/) para adicionar cor aos seus desenhos.
 
 ## 4. Pintar ao ar livre depois do surf, ou depois de um passeio
 
@@ -55,7 +55,7 @@ Se quiser um pouco de apoio, a [Petit Toucan](https://www.instagram.com/petittou
 
 **Porquê?** Não há nada mais inspirador do que a energia da Ericeira depois de uma sessão de surf, um passeio ou um almoço demorado. Organize uma pequena sessão de pintura com amigos: cada pessoa traz material, ou partilha o que tem, e todos pintam a mesma vista à sua maneira.
 
-**Dica WaterLili:** Se preferir um ambiente mais orientado, podemos criar em conjunto uma [sessão personalizada de aguarela ao ar livre](/workshops/pt/workshops-em-casa/) com o seu grupo, perfeita para descobrir a aguarela num ambiente descontraído.
+**Dica WaterLili:** Se preferir um ambiente mais orientado, podemos criar em conjunto uma [sessão personalizada de aguarela ao ar livre](/pt/workshops-em-casa/) com o seu grupo, perfeita para descobrir a aguarela num ambiente descontraído.
 
 ## 5. Oferecer-se um workshop criativo
 
@@ -63,7 +63,7 @@ Se quiser um pouco de apoio, a [Petit Toucan](https://www.instagram.com/petittou
 
 **Porquê?** Um workshop criativo é a atividade perfeita para fazer uma pausa, observar a paisagem e sair com algo único feito pelas suas próprias mãos. Dependendo da data, pode explorar aguarela, criação de caça-sonhos, reparação inspirada no kintsugi ou outra atividade manual tranquila.
 
-**Dica WaterLili:** [Os meus workshops](/workshops/pt/ericeira/) são pensados para que todos possam aproveitar o momento, mesmo iniciantes completos. Exploramos cor, textura, criação lenta e inspiração vinda do oceano, das falésias e das ruas da Ericeira.
+**Dica WaterLili:** [Os meus workshops](/pt/ericeira/) são pensados para que todos possam aproveitar o momento, mesmo iniciantes completos. Exploramos cor, textura, criação lenta e inspiração vinda do oceano, das falésias e das ruas da Ericeira.
 
 ### Então... Que atividade vai experimentar primeiro?
 

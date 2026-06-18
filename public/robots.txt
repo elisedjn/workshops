@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://elisedjn.github.io/workshops/sitemap-index.xml
+Sitemap: https://workshops.waterlili.eu/sitemap-index.xml

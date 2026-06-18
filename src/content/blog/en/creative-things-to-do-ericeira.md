@@ -47,7 +47,7 @@ Share your photos with the hashtag **#CreativeEriceira**. Who knows, maybe your 
 
 If you want a little support, [Petit Toucan](https://www.instagram.com/petittoucan/) sometimes organizes sketching sessions on Saturday mornings, which can be a lovely way to learn in a group.
 
-**WaterLili tip:** Start with simple shapes: a window, a boat, a wave. Add details little by little. And if you want to go further, you can join my [watercolor workshop in Ericeira](/workshops/ericeira/watercolor-tips-and-tricks-ericeira/) to add color to your drawings.
+**WaterLili tip:** Start with simple shapes: a window, a boat, a wave. Add details little by little. And if you want to go further, you can join my [watercolor workshop in Ericeira](/ericeira/watercolor-tips-and-tricks-ericeira/) to add color to your drawings.
 
 ## 4. Paint outside after surf, or after a walk
 
@@ -55,7 +55,7 @@ If you want a little support, [Petit Toucan](https://www.instagram.com/petittouc
 
 **Why?** There is nothing more inspiring than Ericeira's energy after a surf session, a walk, or a long lunch. Organize a small painting session with friends: everyone brings some materials, or shares what they have, and you all paint the same view in your own way.
 
-**WaterLili tip:** If you prefer a more guided setting, we can create together a [personalised watercolor outside session](/workshops/at-home) with your group, perfect for discovering watercolor in a relaxed atmosphere.
+**WaterLili tip:** If you prefer a more guided setting, we can create together a [personalised watercolor outside session](/at-home) with your group, perfect for discovering watercolor in a relaxed atmosphere.
 
 ## 5. Treat yourself to a creative workshop
 
@@ -63,7 +63,7 @@ If you want a little support, [Petit Toucan](https://www.instagram.com/petittouc
 
 **Why?** A creative workshop is the perfect activity to pause, observe the landscape, and leave with something unique made by your own hands. Depending on the date, you can explore watercolor, dreamcatcher making, kintsugi-inspired repair, or another gentle handmade activity.
 
-**WaterLili tip:** [My workshops](/workshops/ericeira/) are designed so everyone can enjoy the moment, even complete beginners. We explore color, texture, slow making, and inspiration from the ocean, cliffs and streets of Ericeira.
+**WaterLili tip:** [My workshops](/ericeira/) are designed so everyone can enjoy the moment, even complete beginners. We explore color, texture, slow making, and inspiration from the ocean, cliffs and streets of Ericeira.
 
 ### So... Which activity will you try first?
 

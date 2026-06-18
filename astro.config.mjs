@@ -3,8 +3,8 @@ import { unified } from "@astrojs/markdown-remark";
 import sitemap from "@astrojs/sitemap";
 import tailwindcss from "@tailwindcss/vite";
 
-const site = process.env.SITE ?? "https://waterlili-workshops.github.io";
-const base = process.env.BASE_PATH ?? "/workshops";
+const site = process.env.SITE ?? "https://workshops.waterlili.eu";
+const base = process.env.BASE_PATH ?? "/";
 
 function openMarkdownLinksInNewTab() {
   return (tree) => {
