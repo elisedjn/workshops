@@ -1,11 +1,9 @@
 ---
 import { getCollection } from 'astro:content';
-import LinkButton from '@components/LinkButton.astro';
 import WorkshopListingCard from '@components/WorkshopListingCard.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { type Locale, type RouteKey } from '@i18n/config';
-import { localizedRoutes, withBase } from '@i18n/routes';
-import { sharedText, siteName, workshopContent } from '@i18n/ui';
+import { siteName, workshopContent } from '@i18n/ui';
 
 interface Props {
   lang: Locale;
@@ -14,21 +12,33 @@ interface Props {
 
 const { lang, route } = Astro.props;
 const content = workshopContent[route][lang];
-const location =
-  route === 'santaCruz' ? 'santa-cruz' : route === 'atHome' ? 'at-home' : 'ericeira';
+const location = route === 'santaCruz' ? 'santa-cruz' : 'ericeira';
 const workshopEntries = (
   await getCollection('workshops', ({ data }) => {
     return data.lang === lang && data.location === location && !data.draft;
   })
-).sort((a, b) => a.data.order - b.data.order || a.data.title.localeCompare(b.data.title));
-const isLocationWorkshopPage = route === 'ericeira' || route === 'santaCruz';
-const accent = {
-  pink: 'bg-pink',
-  green: 'bg-green',
-  yellow: 'bg-yellow',
-  orange: 'bg-orange',
-  blue: 'bg-blue',
-}[content.accent];
+)
+  .filter((workshop) => {
+    return !workshop.data.startDate || workshop.data.startDate >= new Date();
+  })
+  .sort((a, b) => {
+    const firstDate = a.data.startDate?.valueOf();
+    const secondDate = b.data.startDate?.valueOf();
+
+    if (firstDate && secondDate && firstDate !== secondDate) {
+      return firstDate - secondDate;
+    }
+
+    if (firstDate && !secondDate) {
+      return -1;
+    }
+
+    if (!firstDate && secondDate) {
+      return 1;
+    }
+
+    return a.data.order - b.data.order || a.data.title.localeCompare(b.data.title);
+  });
 ---
 
 <BaseLayout
@@ -37,77 +47,23 @@ const accent = {
   lang={lang}
   routeKey={route}
 >
-  {
-    isLocationWorkshopPage ? (
-      <section class='relative overflow-hidden px-5 pt-8 md:py-20'>
-        <div class='mx-auto max-w-6xl'>
-          <p class='text-sm font-black uppercase tracking-[0.28em] text-blue'>
-            {content.eyebrow}
-          </p>
-          <h1 class='mt-4 font-heading text-4xl font-bold leading-[0.82] tracking-tight text-pink md:text-7xl'>
-            {content.title}
-          </h1>
-          <p class='mt-4 italic text-sm text-grey/75 md:text-xl'>{content.intro}</p>
-        </div>
-      </section>
-    ) : (
-      <section class='relative overflow-hidden px-5 py-20 md:py-28'>
-        <div
-          class:list={[
-            'absolute right-0 top-20 -z-10 size-[32rem] rounded-full opacity-30 blur-3xl',
-            accent,
-          ]}
-        />
-        <div class='mx-auto grid max-w-6xl gap-12 lg:grid-cols-[1fr_0.85fr]'>
-          <div>
-            <p class='text-sm font-black uppercase tracking-[0.28em] text-blue'>
-              {content.eyebrow}
-            </p>
-            <h1 class='mt-6 font-heading text-6xl leading-[0.88] tracking-tight text-grey md:text-8xl'>
-              {content.title}
-            </h1>
-            <p class='mt-8 max-w-2xl text-xl leading-9 text-grey/75'>{content.intro}</p>
-            <div class='mt-9 flex flex-wrap gap-4'>
-              <LinkButton href='mailto:hello@example.com'>
-                {sharedText[lang].bookCta}
-              </LinkButton>
-              <LinkButton href={withBase(localizedRoutes.blog[lang])} variant='secondary'>
-                {sharedText[lang].latestPosts}
-              </LinkButton>
-            </div>
-          </div>
-          <aside class='rounded-[2.5rem] border border-grey/10 bg-white/75 p-7 shadow-xl'>
-            <p class='text-sm font-black uppercase tracking-[0.24em] text-pink'>
-              {sharedText[lang].practicalInfo}
-            </p>
-            <ul class='mt-6 grid gap-4'>
-              {content.practical.map((item) => (
-                <li class='rounded-2xl bg-white p-4 font-bold text-grey/75 shadow-sm'>
-                  {item}
-                </li>
-              ))}
-            </ul>
-          </aside>
-        </div>
-      </section>
-    )
-  }
+  <section class='relative overflow-hidden px-5 pt-8 md:py-20'>
+    <div class='mx-auto max-w-6xl'>
+      <p class='text-sm font-black uppercase tracking-[0.28em] text-blue'>
+        {content.eyebrow}
+      </p>
+      <h1 class='mt-4 font-heading text-4xl font-bold leading-[0.82] tracking-tight text-pink md:text-7xl'>
+        {content.title}
+      </h1>
+      <p class='mt-4 italic text-sm text-grey/75 md:text-xl'>{content.intro}</p>
+    </div>
+  </section>
 
   {
     workshopEntries.length > 0 && (
-      <section class:list={['px-5', isLocationWorkshopPage ? 'py-4' : 'py-10']}>
+      <section class='px-5 py-4'>
         <div class='mx-auto max-w-6xl'>
-          {!isLocationWorkshopPage && (
-            <>
-              <p class='text-sm font-black uppercase tracking-[0.24em] text-blue'>
-                {sharedText[lang].allWorkshops}
-              </p>
-              <h2 class='mt-4 font-heading text-6xl font-bold leading-none text-pink md:text-7xl'>
-                {content.eyebrow}
-              </h2>
-            </>
-          )}
-          <div class:list={['grid gap-6', isLocationWorkshopPage ? 'mt-0' : 'mt-8']}>
+          <div class='grid gap-6'>
             {workshopEntries.map((workshop) => (
               <WorkshopListingCard workshop={workshop} lang={lang} />
             ))}
@@ -117,23 +73,4 @@ const accent = {
     )
   }
 
-  {
-    !isLocationWorkshopPage && (
-      <section class='px-5 py-10'>
-        <div class='mx-auto max-w-6xl rounded-[2.5rem] bg-white/75 p-8 shadow-sm md:p-12'>
-          <p class='text-sm font-black uppercase tracking-[0.24em] text-green'>
-            {sharedText[lang].highlights}
-          </p>
-          <div class='mt-8 grid gap-5 md:grid-cols-3'>
-            {content.highlights.map((item) => (
-              <div class='rounded-[1.75rem] border border-grey/10 bg-white p-6'>
-                <span class:list={['mb-8 block size-12 rounded-full', accent]} />
-                <p class='font-heading text-3xl leading-none text-grey'>{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    )
-  }
 </BaseLayout>

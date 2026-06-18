@@ -109,7 +109,7 @@ export const homeContent: Record<
     locationElsewhere: 'Elsewhere',
     aboutTitle: 'About me',
     aboutText:
-      'I’ve always been drawn to creating and crafting. While watercolor is my primary medium today, I still love the magic of making things with my hands. My mission? To bring color and joy back into people’s lives through creativity. That’s why I design warm, accessible workshops for anyone who wants to slow down, experiment, and savor the simple pleasure of making. Here, perfection isn’t the goal—it’s all about sharing a generous, heartfelt creative moment together.',
+      'I’ve always been drawn to creating and crafting. While watercolor is my primary medium today, I still love **the magic of making things with my hands**. \n My mission? To **bring color and joy back into people’s lives** through creativity. That’s why I design warm, accessible workshops for anyone who wants to slow down, experiment, and savor the simple pleasure of making. \n Here, perfection isn’t the goal—it’s all about sharing a **generous, heartfelt creative moment** together.',
   },
   fr: {
     seoTitle: 'Ateliers créatifs à Ericeira, Santa Cruz et à domicile',
@@ -199,6 +199,183 @@ export const nextWorkshopContent: Record<
   },
 };
 
+export const atHomeDetails: Record<
+  Locale,
+  {
+    offerTitle: string;
+    offerIntro: string;
+    workshops: { name: string; image: string }[];
+    faqTitle: string;
+    faqIntro: string;
+    faqItems: { question: string; answer: string }[];
+  }
+> = {
+  en: {
+    offerTitle: 'Workshops I can bring to you',
+    offerIntro: 'Choose the creative activity that fits your group, mood, and space.',
+    workshops: [
+      { name: 'Watercolor', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Dreamcatcher',
+        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Macrame plant hanger',
+        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Kintsugi',
+        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+      },
+      { name: '3D printed statues painting', image: '/images/ChezSandy.jpg' },
+    ],
+    faqTitle: 'Practical questions',
+    faqIntro: 'The essentials to plan your private workshop',
+    faqItems: [
+      {
+        question: 'What type of workshops can I choose?',
+        answer:
+          'Available options include watercolor, dreamcatcher, macrame plant hanger, kintsugi, and 3D printed statues painting. We can choose the activity that best fits your group, space, and celebration.',
+      },
+      {
+        question: 'Where can the workshop take place?',
+        answer:
+          'At your home, holiday rental, garden, terrace, another suitable private space or even a public park or your favorite beach... I bring the creative table to you.',
+      },
+      {
+        question: 'Are materials included?',
+        answer:
+          'Yes. I bring the materials needed for the chosen activity, and we can adapt the setup to your space.',
+      },
+      {
+        question: 'How many people can join?',
+        answer:
+          'Workshops are designed for groups of 3 to 8 people. For parties with more than 8 people, we can organize several sessions or a drop-in/drop-off format where guests can come and leave whenever they want.',
+      },
+      {
+        question: 'What kinds of events work well?',
+        answer:
+          'Birthdays, bachelorette parties, cozy celebrations, family gatherings, holidays, and relaxed moments with friends.',
+      },
+      {
+        question: 'Who can participate?',
+        answer:
+          'Kids from 6 years old and adults are welcome. Any level is welcome: I adapt the rhythm, guidance, and activity to your group.',
+      },
+    ],
+  },
+  fr: {
+    offerTitle: 'Les ateliers que je peux apporter chez vous',
+    offerIntro:
+      "Choisissez l'activité créative qui correspond à votre groupe, votre ambiance et votre espace.",
+    workshops: [
+      { name: 'Aquarelle', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Attrape-rêves',
+        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Suspension pour plante en macramé',
+        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Kintsugi',
+        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+      },
+      { name: 'Peinture de statues imprimées en 3D', image: '/images/ChezSandy.jpg' },
+    ],
+    faqTitle: 'Questions pratiques',
+    faqIntro: 'Les informations essentielles avant de préparer votre atelier privé.',
+    faqItems: [
+      {
+        question: "Quels types d'ateliers puis-je choisir ?",
+        answer:
+          "Les options disponibles incluent l'aquarelle, les attrape-rêves, les suspensions pour plantes en macramé, le kintsugi et la peinture de statues imprimées en 3D. Nous pouvons choisir l'activité qui correspond le mieux à votre groupe, votre espace et votre événement.",
+      },
+      {
+        question: "Où l'atelier peut-il avoir lieu ?",
+        answer:
+          "Chez vous, dans votre location de vacances, un jardin, une terrasse ou un autre espace privé adapté. J'apporte la table créative à vous.",
+      },
+      {
+        question: 'Le matériel est-il inclus ?',
+        answer:
+          "Oui. J'apporte le matériel nécessaire pour l'activité choisie, et nous pouvons adapter l'installation à votre espace.",
+      },
+      {
+        question: 'Combien de personnes peuvent participer ?',
+        answer:
+          'Les ateliers sont pensés pour des groupes de 3 à 8 personnes. Pour les événements de plus de 8 personnes, nous pouvons organiser plusieurs sessions ou un format libre où les invitées et invités arrivent et repartent quand ils le souhaitent.',
+      },
+      {
+        question: 'Pour quels événements est-ce adapté ?',
+        answer:
+          'Anniversaires, enterrements de vie de jeune fille, moments conviviaux, réunions de famille, vacances et temps doux entre amis.',
+      },
+      {
+        question: 'Qui peut participer ?',
+        answer:
+          "Les enfants à partir de 6 ans et les adultes sont bienvenus. Tous les niveaux sont acceptés : j'adapte le rythme, l'accompagnement et l'activité au groupe.",
+      },
+    ],
+  },
+  pt: {
+    offerTitle: 'Workshops que posso levar até si',
+    offerIntro:
+      'Escolha a atividade criativa que combina melhor com o grupo, o ambiente e o espaço.',
+    workshops: [
+      { name: 'Aguarela', image: '/images/watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Caça-sonhos',
+        image: '/images/dreamcatcher-workshop-ericeira-21-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Suporte de planta em macramé',
+        image: '/images/plant-hanger-workshop-santa-cruz-19-june-2026-portugal.jpg',
+      },
+      {
+        name: 'Kintsugi',
+        image: '/images/kintsugi-workshop-ericeira-28-june-2026-portugal.jpg',
+      },
+      { name: 'Pintura de estátuas impressas em 3D', image: '/images/ChezSandy.jpg' },
+    ],
+    faqTitle: 'Perguntas práticas',
+    faqIntro: 'O essencial antes de planear o seu workshop privado.',
+    faqItems: [
+      {
+        question: 'Que tipos de workshops posso escolher?',
+        answer:
+          'As opções disponíveis incluem aguarela, caça-sonhos, suporte de planta em macramé, kintsugi e pintura de estátuas impressas em 3D. Podemos escolher a atividade que melhor combina com o grupo, o espaço e a celebração.',
+      },
+      {
+        question: 'Onde pode acontecer o workshop?',
+        answer:
+          'Em sua casa, alojamento de férias, jardim, terraço ou outro espaço privado adequado. Levo a mesa criativa até si.',
+      },
+      {
+        question: 'Os materiais estão incluídos?',
+        answer:
+          'Sim. Levo os materiais necessários para a atividade escolhida, e podemos adaptar a montagem ao seu espaço.',
+      },
+      {
+        question: 'Quantas pessoas podem participar?',
+        answer:
+          'Os workshops são pensados para grupos de 3 a 8 pessoas. Para festas com mais de 8 pessoas, podemos organizar várias sessões ou um formato drop-in/drop-off, em que os convidados podem entrar e sair quando quiserem.',
+      },
+      {
+        question: 'Que eventos funcionam bem?',
+        answer:
+          'Aniversários, despedidas de solteira, celebrações acolhedoras, encontros de família, férias e momentos descontraídos com amigos.',
+      },
+      {
+        question: 'Quem pode participar?',
+        answer:
+          'Crianças a partir dos 6 anos e adultos são bem-vindos. Todos os níveis são aceites: adapto o ritmo, a orientação e a atividade ao grupo.',
+      },
+    ],
+  },
+};
+
 export const workshopContent: Record<
   Exclude<RouteKey, 'home' | 'blog'>,
   Record<
@@ -285,7 +462,7 @@ export const workshopContent: Record<
       eyebrow: 'Santa Cruz workshops',
       title: 'Hands-on afternoons near the Atlantic.',
       intro:
-        'Creative sessions in Santa Cruz are designed for easy-going groups who want a memorable activity close to the beach.',
+        'Come and explore your creativity during a small-group session with gentle guidance : a memorable activity close to the beach.',
       accent: 'yellow',
       highlights: [
         'Coastal setting',
@@ -343,11 +520,11 @@ export const workshopContent: Record<
     en: {
       seoTitle: 'At-home creative workshops in Portugal',
       seoDescription:
-        'Private creative workshops brought to your home for birthdays, family gatherings, holidays, and small group celebrations.',
+        'Private creative workshops brought to your home for birthdays, bachelorette parties, family gatherings, holidays, and small group celebrations.',
       eyebrow: 'Private workshops',
       title: 'Bring the creative table to your home.',
       intro:
-        'At-home workshops are flexible private sessions for families, friends, birthdays, and cozy celebrations across the local area.',
+        'At-home workshops are flexible private sessions for families, friends, birthdays, bachelorette parties, and cozy celebrations across the local area.',
       accent: 'pink',
       highlights: [
         'Private format',
@@ -356,8 +533,9 @@ export const workshopContent: Record<
       ],
       practical: [
         'Location: your home or holiday rental',
-        'Languages: English, French, Portuguese',
-        'Format: private booking by request',
+        'Group size: 3 to 8 people',
+        'Kids from 6 years old and adults',
+        'Any level welcome: I adapt to your group',
       ],
     },
     fr: {
@@ -376,8 +554,9 @@ export const workshopContent: Record<
       ],
       practical: [
         'Lieu : chez vous ou dans votre location',
-        'Langues : anglais, français, portugais',
-        'Format : réservation privée sur demande',
+        'Taille du groupe : 3 à 8 personnes',
+        'Enfants à partir de 6 ans et adultes',
+        "Tous niveaux bienvenus : j'adapte au groupe",
       ],
     },
     pt: {
@@ -396,8 +575,9 @@ export const workshopContent: Record<
       ],
       practical: [
         'Local: casa ou alojamento de férias',
-        'Idiomas: inglês, francês, português',
-        'Formato: reserva privada mediante pedido',
+        'Grupo: 3 a 8 pessoas',
+        'Crianças a partir dos 6 anos e adultos',
+        'Todos os níveis: adapto ao grupo',
       ],
     },
   },

@@ -38,6 +38,16 @@ const nextWorkshopHref = nextWorkshop
 const nextWorkshopBookingHref = nextWorkshop
   ? getBookingHref(nextWorkshop.data.bookingUrl, nextWorkshop.data.bookingMessage)
   : 'mailto:hello@example.com';
+const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
+  return paragraph.split(/(\*\*.+?\*\*)/g).map((part) => {
+    const isBold = part.startsWith('**') && part.endsWith('**');
+
+    return {
+      text: isBold ? part.slice(2, -2) : part,
+      isBold,
+    };
+  });
+});
 ---
 
 <BaseLayout
@@ -177,7 +187,17 @@ const nextWorkshopBookingHref = nextWorkshop
         >
           Waterlili
         </h2>
-        <p class='mt-4 text-grey/75'>{content.aboutText}</p>
+        <div class='mt-4 space-y-3 text-grey/75'>
+          {
+            aboutParagraphs.map((paragraph) => (
+              <p>
+                {paragraph.map((part) =>
+                  part.isBold ? <strong class='font-bold text-grey'>{part.text}</strong> : part.text
+                )}
+              </p>
+            ))
+          }
+        </div>
       </div>
     </div>
   </section>
