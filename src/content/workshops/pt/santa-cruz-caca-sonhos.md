@@ -17,6 +17,8 @@ address: |
 order: 2
 draft: false
 image: '/images/waterlili-dreamcatcher-workshop-santa-cruz-portugal.jpg'
+bookingUrl: 'https://wa.me/33662890364'
+bookingMessage: 'Olá, gostaria de participar no workshop de caça-sonhos na Santa Cruz no dia 26!'
 ---
 
 Participe num **workshop de caça-sonhos descontraído e tátil** em Santa Cruz com a Waterlili. Esta experiência criativa de 2 horas foi pensada para quem quer **abrandar, trabalhar com as mãos e criar um objeto feito à mão com significado** num ambiente natural tranquilo.

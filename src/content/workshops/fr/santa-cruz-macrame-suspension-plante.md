@@ -17,6 +17,8 @@ address: |
 order: 1
 draft: false
 image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg'
+bookingUrl: 'https://wa.me/33662890364'
+bookingMessage: "Salut! Je voudrais participer à l'atelier de suspension en macramé du 19 juin à Santa Cruz"
 ---
 
 Participez à un **atelier macramé calme et créatif** à Santa Cruz avec Waterlili. Cette session de 2 heures est une introduction douce aux techniques de nœuds et à la décoration faite main, pensée pour celles et ceux qui souhaitent **ralentir, créer avec leurs mains et fabriquer quelque chose de beau pour leur maison**.

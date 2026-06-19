@@ -17,6 +17,8 @@ address: |
 order: 2
 draft: false
 image: '/images/waterlili-dreamcatcher-workshop-santa-cruz-portugal.jpg'
+bookingUrl: 'https://wa.me/33662890364'
+bookingMessage: 'Hello, I would like to join the Dreamcatcher workshop in Santa Cruz!'
 ---
 
 Join a **relaxed and tactile dreamcatcher workshop** in Santa Cruz with Waterlili. This creative 2-hour experience is designed for anyone who wants to **slow down, work with their hands, and create a meaningful handmade object** in a peaceful natural setting.

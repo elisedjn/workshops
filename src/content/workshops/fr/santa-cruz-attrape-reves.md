@@ -17,6 +17,8 @@ address: |
 order: 2
 draft: false
 image: '/images/waterlili-dreamcatcher-workshop-santa-cruz-portugal.jpg'
+bookingUrl: 'https://wa.me/33662890364'
+bookingMessage: "Salut! Je voudrais participer à l'atelier d'attrape rêve du 26 juin à Santa Cruz"
 ---
 
 Participez à un **atelier attrape-rêves détendu et tactile** à Santa Cruz avec Waterlili. Cette expérience créative de 2 heures est pensée pour celles et ceux qui souhaitent **ralentir, créer avec leurs mains et fabriquer un objet fait main plein de sens** dans un cadre naturel paisible.

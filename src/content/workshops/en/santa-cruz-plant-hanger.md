@@ -17,6 +17,8 @@ address: |
 order: 1
 draft: false
 image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg'
+bookingUrl: 'https://wa.me/33662890364'
+bookingMessage: 'Hello, I would like to join the Macrame Plant Hanger workshop in Santa Cruz!'
 ---
 
 Join a **calm and creative macrame workshop** in Santa Cruz with Waterlili. This 2-hour session is a gentle introduction to knotting techniques and handmade decoration, designed for anyone who wants to **slow down, create with their hands, and make something beautiful for their home**.
