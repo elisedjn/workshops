@@ -15,7 +15,7 @@ place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
 order: 1
-draft: false
+draft: true
 image: '/images/waterlili-macrame-plant-hanger-workshop-santa-cruz-portugal.jpg'
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar no workshop de suporte de planta em macramé na Santa Cruz no dia 19!'
