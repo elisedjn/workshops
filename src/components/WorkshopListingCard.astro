@@ -47,8 +47,11 @@ const labels = {
           <img
             src={withBase(workshop.data.image)}
             alt={workshop.data.title}
+            width='1200'
+            height='800'
             class='absolute inset-0 h-full w-full object-cover'
             loading='lazy'
+            decoding='async'
           />
         ) : (
           <>
@@ -63,9 +66,9 @@ const labels = {
         workshop.data.price && (
           <div class='absolute right-4 bottom-4 z-10 grid size-20 place-items-center rounded-full bg-yellow/95 p-4 text-center shadow-xl shadow-grey/15 lg:hidden'>
             <div>
-              <p class='mt-1 font-bold leading-tight text-grey'>{workshop.data.price}</p>
+              <p class='mt-1 font-bold leading-tight text-white'>{workshop.data.price}</p>
               {workshop.data.priceDetails && (
-                <p class='mt-1 text-[0.58rem] leading-tight text-grey/70'>
+                <p class='mt-1 text-[0.58rem] leading-tight text-white'>
                   {workshop.data.priceDetails}
                 </p>
               )}

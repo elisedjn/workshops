@@ -78,6 +78,9 @@ const articleSchema = {
         <img
           src={withBase(post.data.image)}
           alt={post.data.title}
+          width='1200'
+          height='800'
+          decoding='async'
           class='mt-10 aspect-[16/10] w-full rounded-[2rem] object-cover shadow-xl shadow-pink/15'
         />
       )

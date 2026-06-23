@@ -37,16 +37,16 @@ const socialLinks = [
 ] as const;
 ---
 
-<footer class='mt-24 border-t border-pink/20 bg-pink text-grey'>
+<footer class='mt-24 border-t border-pink/20 bg-pink text-ink'>
   <div class='mx-auto grid max-w-6xl gap-10 px-5 py-12 md:grid-cols-[1.2fr_1fr]'>
     <div>
-      <p class='font-heading text-4xl text-white/80 font-bold'>{siteName}</p>
+      <p class='font-heading text-4xl text-white font-bold'>{siteName}</p>
       <p class='mt-4 max-w-xl text-white'>
         {sharedText[lang].footerDescription}
       </p>
       <a
         href={whatsappHref}
-        class='mt-6 inline-flex rounded-full bg-white px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-pink transition hover:bg-yellow hover:text-grey'
+        class='mt-6 inline-flex rounded-full bg-white px-6 py-3 text-sm font-black uppercase tracking-[0.18em] text-pink transition hover:bg-yellow hover:text-white'
       >
         {sharedText[lang].contactCta}
       </a>
@@ -137,7 +137,7 @@ const socialLinks = [
       }
     </nav>
   </div>
-  <div class='border-t border-white/25 px-5 py-5 text-center text-sm text-white/80'>
+  <div class='border-t border-white/25 px-5 py-5 text-center text-sm text-white'>
     © {year}
     {siteName}
   </div>

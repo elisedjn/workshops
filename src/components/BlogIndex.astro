@@ -64,8 +64,7 @@ const blogHref = withBase(localizedRoutes.blog[lang]);
         {filterText.showing}
         <span
           id='active-tag-name'
-          class='ml-2 rounded-full bg-white px-3 py-1 text-sm text-blue'
-        ></span>
+          class='ml-2 rounded-full bg-white px-3 py-1 text-sm text-blue'></span>
       </p>
       <a
         href={blogHref}
@@ -91,8 +90,11 @@ const blogHref = withBase(localizedRoutes.blog[lang]);
                   <img
                     src={withBase(post.data.image)}
                     alt={post.data.title}
+                    width='1200'
+                    height='800'
                     class='h-56 w-full object-cover transition group-hover:scale-[1.02]'
                     loading='lazy'
+                    decoding='async'
                   />
                 ) : (
                   <div class='h-56 bg-pink/25 p-6'>
@@ -122,7 +124,7 @@ const blogHref = withBase(localizedRoutes.blog[lang]);
                   {post.data.tags.map((tag) => (
                     <a
                       href={`${blogHref}?tag=${encodeURIComponent(tag)}`}
-                      class='rounded-full bg-yellow/40 px-3 py-1 text-xs font-bold text-grey/75 transition hover:bg-yellow hover:text-grey'
+                      class='rounded-full bg-yellow/30 px-3 py-1 text-xs font-bold text-grey/75 transition hover:bg-yellow hover:text-white'
                     >
                       {tag}
                     </a>

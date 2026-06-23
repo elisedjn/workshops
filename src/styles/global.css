@@ -1,12 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300..700&display=swap");
 @import "tailwindcss";
 
 @theme {
-  --color-pink: #eb9d8a;
-  --color-green: #c0bd75;
-  --color-yellow: #eac57c;
-  --color-orange: #e7ac75;
-  --color-blue: #89afa5;
+  --color-pink: #e88a73;
+  --color-green: #a5a35f;
+  --color-yellow: #eebf60;
+  --color-orange: #e1964f;
+  --color-blue: #66837c;
   --color-grey: #535455;
   --color-white: #f7f2ee;
   --font-heading: "Amatic SC", cursive;
@@ -14,11 +13,11 @@
 }
 
 :root {
-  --pink: #eb9d8a;
-  --green: #c0bd75;
-  --yellow: #eac57c;
-  --orange: #e7ac75;
-  --blue: #89afa5;
+  --pink: #e88a73;
+  --green: #a5a35f;
+  --yellow: #eebf60;
+  --orange: #e1964f;
+  --blue: #66837c;
   --grey: #535455;
   --white: #f7f2ee;
 }
@@ -43,7 +42,7 @@ body {
 
 ::selection {
   background: var(--yellow);
-  color: var(--grey);
+  color: var(--white);
 }
 
 .prose-workshop {

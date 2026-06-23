@@ -38,6 +38,11 @@ const nextWorkshopHref = nextWorkshop
 const nextWorkshopBookingHref = nextWorkshop
   ? getBookingHref(nextWorkshop.data.bookingUrl, nextWorkshop.data.bookingMessage)
   : 'mailto:hello@example.com';
+const blogCtaText = {
+  en: 'Read the creativity journal',
+  fr: 'Lire le carnet créatif',
+  pt: 'Ler o diário criativo',
+}[lang];
 const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
   return paragraph.split(/(\*\*.+?\*\*)/g).map((part) => {
     const isBold = part.startsWith('**') && part.endsWith('**');
@@ -63,13 +68,23 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
       <img
         src={withBase('/images/creative-watercolor-workshop-ericeira-portugal-hero.jpg')}
         alt=''
+        width='1200'
+        height='1600'
+        decoding='async'
+        fetchpriority='high'
         class='absolute inset-0 hidden h-full w-full object-cover lg:block'
       />
       <div class='absolute inset-0 hidden bg-grey/45 backdrop-blur-[1px] lg:block'></div>
       <div class='relative overflow-hidden p-7 lg:overflow-visible lg:p-0'>
         <img
-          src={withBase('/images/creative-watercolor-workshop-ericeira-portugal-hero.jpg')}
+          src={withBase(
+            '/images/creative-watercolor-workshop-ericeira-portugal-hero.jpg',
+          )}
           alt=''
+          width='1200'
+          height='1600'
+          decoding='async'
+          fetchpriority='high'
           class='absolute inset-0 h-full w-full scale-200 object-cover lg:hidden'
         />
         <div class='absolute inset-0 bg-grey/45 backdrop-blur-[1px] lg:hidden'></div>
@@ -169,17 +184,23 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
     </div>
   </section>
 
-  <section class='py-4 bg-pink/65'>
+  <section class='py-4 bg-pink'>
     <div
       class='mx-auto max-w-6xl grid items-center gap-8 p-8 md:grid-cols-[14rem_1fr] md:p-10'
     >
       <img
-        src={withBase('/images/waterlili-creation-founder-watercolor-workshop-portugal.jpg')}
+        src={withBase(
+          '/images/waterlili-creation-founder-watercolor-workshop-portugal.jpg',
+        )}
         alt='Waterlili Creation artist leading a watercolor workshop'
+        width='700'
+        height='700'
+        loading='lazy'
+        decoding='async'
         class='mx-auto size-58 rounded-full object-cover object-top shadow-xl shadow-pink/15'
       />
       <div>
-        <p class='text-sm font-black uppercase tracking-[0.24em] text-grey/75'>
+        <p class='text-sm font-black uppercase tracking-[0.24em] text-white'>
           {content.aboutTitle}
         </p>
         <h2
@@ -187,13 +208,13 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
         >
           Waterlili
         </h2>
-        <div class='mt-4 space-y-3 text-grey/75'>
+        <div class='mt-4 space-y-3 text-white'>
           {
             aboutParagraphs.map((paragraph) => (
               <p>
                 {paragraph.map((part) =>
                   part.isBold ? (
-                    <strong class='font-bold text-grey'>{part.text}</strong>
+                    <strong class='font-bold text-white'>{part.text}</strong>
                   ) : (
                     part.text
                   ),
@@ -217,7 +238,7 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
         <p class='mt-5 text-grey/75'>{content.blogIntro}</p>
         <div class='mt-7'>
           <LinkButton href={withBase(localizedRoutes.blog[lang])} color='blue'>
-            {sharedText[lang].readMore}
+            {blogCtaText}
           </LinkButton>
         </div>
       </div>
@@ -232,8 +253,11 @@ const aboutParagraphs = content.aboutText.split('\n').map((paragraph) => {
                 <img
                   src={withBase(post.data.image)}
                   alt={post.data.title}
+                  width='1200'
+                  height='800'
                   class='h-32 w-full rounded-[1rem] object-cover'
                   loading='lazy'
+                  decoding='async'
                 />
               ) : (
                 <div class='h-32 rounded-[1rem] bg-blue/25' />

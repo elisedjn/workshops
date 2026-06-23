@@ -40,6 +40,12 @@ const path = canonicalPath ?? alternates[lang];
     <meta name='viewport' content='width=device-width, initial-scale=1.0' />
     <meta name='generator' content={Astro.generator} />
     <link rel='icon' type='image/svg+xml' href={withBase('/favicon.ico')} />
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link
+      rel='stylesheet'
+      href='https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Quicksand:wght@300..700&display=swap'
+    />
     <SEO
       title={title}
       description={description}
