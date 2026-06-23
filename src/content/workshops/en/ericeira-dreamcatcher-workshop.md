@@ -4,9 +4,9 @@ description: 'What if the piece you create today could guard your dreams tonight
 lang: en
 location: ericeira
 slug: dreamcatcher-workshop-ericeira
-date: 'Sunday, June 21st'
+date: 'Sunday, July 5th'
 time: '2:30pm - 4:30pm'
-startDate: 2026-06-21T14:30:00+01:00
+startDate: 2026-07-05T14:30:00+01:00
 duration: '2 hours'
 durationDetails: 'All levels'
 price: '40€'
@@ -18,7 +18,7 @@ order: 2
 draft: false
 image: /images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
-bookingMessage: 'Hello, I would like to join the Dreamcatcher Workshop in Ericeira on the 21st!'
+bookingMessage: 'Hello, I would like to join the Dreamcatcher Workshop in Ericeira on the 5th of July!'
 ---
 
 Join a **relaxed and tactile dreamcatcher workshop** in Ericeira with Waterlili. This creative 2-hour experience is designed for anyone who wants to **slow down, work with their hands, and create a meaningful handmade object** in a warm atmosphere near the ocean.

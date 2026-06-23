@@ -4,7 +4,7 @@ description: 'Unleash your creativity with a watercolor workshop. Explore differ
 lang: en
 location: ericeira
 slug: watercolor-tips-and-tricks-ericeira
-startDate: 2026-06-21T10:00:00+01:00
+startDate: 2026-06-28T10:00:00+01:00
 date: 'Every Sunday'
 time: '10am to 12pm'
 duration: '2 hours'
