@@ -4,7 +4,7 @@ description: 'Libérez votre créativité avec un atelier aquarelle. Explorez di
 lang: fr
 location: ericeira
 slug: aquarelle-trucs-et-astuces-ericeira
-startDate: 2026-06-21T10:00:00+01:00
+startDate: 2026-07-05T10:00:00+01:00
 date: 'Chaque dimanche'
 time: '10h à 12h'
 duration: '2 heures'

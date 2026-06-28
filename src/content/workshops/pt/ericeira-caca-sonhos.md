@@ -4,9 +4,9 @@ description: 'E se a peça que cria hoje pudesse proteger os seus sonhos esta no
 lang: pt
 location: ericeira
 slug: caca-sonhos-ericeira
-date: 'Domingo, 21 de junho'
+date: 'Domingo, 5 de julho'
 time: '14h30 - 16h30'
-startDate: 2026-06-21T14:30:00+01:00
+startDate: 2026-07-05T14:30:00+01:00
 duration: '2 horas'
 durationDetails: 'Todos os níveis'
 price: '40€'
@@ -18,7 +18,7 @@ order: 2
 draft: false
 image: /images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
-bookingMessage: 'Olá, gostaria de participar no workshop de caça-sonhos na Ericeira no dia 21!'
+bookingMessage: 'Olá, gostaria de participar no workshop de caça-sonhos na Ericeira no dia 5 de julho!'
 ---
 
 Participe num **workshop de caça-sonhos descontraído e tátil** na Ericeira com a Waterlili. Esta experiência criativa de 2 horas foi pensada para quem quer **abrandar, trabalhar com as mãos e criar um objeto feito à mão com significado** num ambiente acolhedor perto do oceano.

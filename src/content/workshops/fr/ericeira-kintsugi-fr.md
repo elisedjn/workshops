@@ -4,21 +4,21 @@ description: "Découvrez l'art ancestral japonais du kintsugi, où les céramiqu
 lang: fr
 location: ericeira
 slug: atelier-kintsugi-ericeira
-date: 'Dimanche 28 juin'
+date: 'Dimanche 12 juillet'
 time: '14h30 - 16h30'
-startDate: 2026-06-28T14:30:00+01:00
+startDate: 2026-07-12T14:30:00+01:00
 duration: '2 heures'
 durationDetails: 'Tous niveaux'
 price: '50€'
-priceDetails: 'Matériel de réparation inclus, apportez votre pièce en céramique'
+priceDetails: 'Matériel inclus'
 place: 'JBay Collective'
 address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
-order: 3
+order: 4
 draft: false
 image: /images/waterlili-kintsugi-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
-bookingMessage: "Bonjour, j'aimerais participer à l'atelier kintsugi à Ericeira le 28 juin !"
+bookingMessage: "Bonjour, j'aimerais participer à l'atelier kintsugi à Ericeira le 12 juillet !"
 ---
 
 Découvrez un **atelier inspiré du kintsugi, détendu et plein de sens** à Ericeira avec Waterlili. Cette expérience créative de 2 heures introduit l'esprit de l'art japonais de réparer la céramique avec de l'or, où les fissures et les imperfections deviennent une partie de la beauté de l'objet.

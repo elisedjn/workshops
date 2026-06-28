@@ -4,7 +4,7 @@ description: 'Liberte a sua criatividade com um workshop de aguarela. Explore di
 lang: pt
 location: ericeira
 slug: aguarela-dicas-e-tecnicas-ericeira
-startDate: 2026-06-21T10:00:00+01:00
+startDate: 2026-07-05T10:00:00+01:00
 date: 'Todos os domingos'
 time: '10h às 12h'
 duration: '2 horas'

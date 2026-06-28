@@ -1,6 +1,6 @@
 ---
 title: 'Aquarelle dans les champs'
-description: 'Libérez votre créativité avec un atelier aquarelle. Explorez différentes techniques et créez votre propre œuvre à emporter.'
+description: 'Laissez votre créativité fleurir avec un atelier aquarelle au cœur de la nature. Découvrez de nouvelles techniques et peignez votre propre œuvre à emporter.'
 lang: fr
 location: santa-cruz
 slug: aquarelle-dans-les-champs-santa-cruz
@@ -14,9 +14,9 @@ priceDetails: 'Matériel inclus'
 place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
-order: 1
+order: 3
 draft: false
-image: /images/waterlili-watercolor-workshop-santa-cruz-portugal.jpg
+image: /images/waterlili-watercolor-workshop-in-the-fields-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: "Bonjour, j'aimerais participer à la prochaine session Aquarelle dans les champs à Santa Cruz !"
 ---

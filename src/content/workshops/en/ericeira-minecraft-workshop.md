@@ -1,6 +1,6 @@
 ---
 title: 'Painting workshop'
-description: 'What if the piece you create today could guard your dreams tonight ?'
+description: 'Choose your character, pick its weapon, and let your creativity flow'
 lang: en
 location: ericeira
 slug: minecraft-painting-workshop-ericeira

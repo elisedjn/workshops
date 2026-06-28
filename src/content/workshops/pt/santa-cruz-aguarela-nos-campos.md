@@ -1,6 +1,6 @@
 ---
 title: 'Aguarela nos Campos'
-description: 'Liberte a sua criatividade com um workshop de aguarela. Explore diferentes técnicas e crie a sua própria obra para levar para casa.'
+description: 'Deixe a sua criatividade florescer com um workshop de aguarela no coração da natureza. Descubra novas técnicas e pinte a sua própria obra para levar para casa.'
 lang: pt
 location: santa-cruz
 slug: aguarela-nos-campos-santa-cruz
@@ -14,9 +14,9 @@ priceDetails: 'Materiais incluídos'
 place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
-order: 1
+order: 3
 draft: false
-image: /images/waterlili-watercolor-workshop-santa-cruz-portugal.jpg
+image: /images/waterlili-watercolor-workshop-in-the-fields-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar na próxima sessão Aguarela nos Campos na Santa Cruz!'
 ---
