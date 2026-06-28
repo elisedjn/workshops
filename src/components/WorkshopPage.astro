@@ -17,28 +17,7 @@ const workshopEntries = (
   await getCollection('workshops', ({ data }) => {
     return data.lang === lang && data.location === location && !data.draft;
   })
-)
-  .filter((workshop) => {
-    return !workshop.data.startDate || workshop.data.startDate >= new Date();
-  })
-  .sort((a, b) => {
-    const firstDate = a.data.startDate?.valueOf();
-    const secondDate = b.data.startDate?.valueOf();
-
-    if (firstDate && secondDate && firstDate !== secondDate) {
-      return firstDate - secondDate;
-    }
-
-    if (firstDate && !secondDate) {
-      return -1;
-    }
-
-    if (!firstDate && secondDate) {
-      return 1;
-    }
-
-    return a.data.order - b.data.order || a.data.title.localeCompare(b.data.title);
-  });
+).sort((a, b) => a.data.order - b.data.order);
 ---
 
 <BaseLayout

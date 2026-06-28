@@ -1,6 +1,6 @@
 ---
 title: 'Watercolor in the Fields'
-description: 'Unleash your creativity with a watercolor workshop. Explore different techniques, and create your own piece of art to take home.'
+description: 'Let your creativity bloom with a watercolor workshop in the heart of nature. Discover new techniques and paint your own masterpiece to take home.'
 lang: en
 location: santa-cruz
 slug: watercolor-in-the-fields-santa-cruz
@@ -14,9 +14,9 @@ priceDetails: 'Materials included'
 place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
-order: 1
+order: 3
 draft: false
-image: /images/waterlili-watercolor-workshop-santa-cruz-portugal.jpg
+image: /images/waterlili-watercolor-workshop-in-the-fields-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the next Watercolor in the Fields session in Santa Cruz!'
 ---

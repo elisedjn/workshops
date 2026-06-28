@@ -15,7 +15,7 @@ place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
 order: 2
-draft: false
+draft: true
 image: '/images/waterlili-dreamcatcher-workshop-santa-cruz-portugal.jpg'
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the Dreamcatcher workshop in Santa Cruz!'

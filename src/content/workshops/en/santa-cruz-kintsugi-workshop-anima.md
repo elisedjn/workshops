@@ -1,27 +1,27 @@
 ---
-title: 'Kintsugi workshop'
+title: 'Kintsugi workshop at Anima Argilla'
 description: 'Discover the ancestral Japanese art of Kintsugi—where broken ceramics are transformed into stunning, gold-adorned treasures.'
 lang: en
-location: ericeira
-slug: kintsugi-workshop-ericeira
-date: 'Sunday, July 12th'
-time: '2:30pm - 4:30pm'
-startDate: 2026-07-12T14:30:00+01:00
-duration: '2 hours'
+location: santa-cruz
+slug: kintsugi-workshop-anima-santa-cruz
+date: 'Sunday, July 19th'
+time: '3pm - 6pm'
+startDate: 2026-07-19T15:00:00+01:00
+duration: '3 hours'
 durationDetails: 'All levels'
-price: '50€'
+price: '45€'
 priceDetails: 'Material included'
-place: 'JBay Collective'
+place: 'Anima Argilla'
 address: |
-  R. Dr. Eduardo Burnay 32 A - Ericeira
+  Rua José Pedro Lopes, 17B - Santa Cruz
 order: 4
 draft: false
-image: /images/waterlili-kintsugi-workshop-ericeira-portugal.jpg
+image: /images/waterlili-kintsugi-workshop-santa-cruz-portugal-anima.jpg
 bookingUrl: 'https://wa.me/33662890364'
-bookingMessage: 'Hello, I would like to join the Kintsugi Workshop in Ericeira on the 12th!'
+bookingMessage: 'Hello, I would like to join the Kintsugi Workshop at Anima Argilla on the 19th!'
 ---
 
-Discover a **relaxed and meaningful kintsugi-inspired workshop** in Ericeira with Waterlili. This creative 2-hour experience introduces the spirit of the Japanese art of repairing ceramics with gold, where cracks and imperfections become part of the beauty of the piece.
+Discover a **relaxed and meaningful kintsugi-inspired workshop** in Santa Cruz. This creative 2-hour experience introduces the spirit of the Japanese art of repairing ceramics with gold, where cracks and imperfections become part of the beauty of the piece.
 
 Please come with a ceramic piece of your own: either something already broken at home, like that **favorite mug you have been meaning to fix one day**, or a ceramic object you are okay to break and rebuild during the workshop. It can be a mug, plate, cup, bowl, soap tray, decorative object, or another small ceramic piece.
 
@@ -29,4 +29,4 @@ During the session, you will learn a simple, accessible approach to **repairing,
 
 Begin with a guided explanation and live demonstration by the artist, followed by time to **repair, decorate, and personalize your own ceramic piece** with personal support throughout the session.
 
-**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to explore kintsugi in a gentle and symbolic way. **Repair materials are included**, and you will leave with your own **golden repaired ceramic piece** and a thoughtful creative memory of Ericeira.
+**No previous experience is needed**, making the workshop suitable for complete beginners, travelers, creatives, and anyone curious to explore kintsugi in a gentle and symbolic way. **Repair materials are included**, and you will leave with your own **golden repaired ceramic piece**.
