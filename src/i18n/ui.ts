@@ -161,35 +161,35 @@ export const nextWorkshopContent: Record<
 > = {
   en: {
     label: 'Next workshop',
-    title: 'Summer creative table',
+    title: 'Watercolor Workshop',
     dateLabel: 'Date',
     date: 'Next date to be announced',
     locationLabel: 'Location',
     location: 'Ericeira or Santa Cruz',
     description:
-      'A relaxed small-group session with tactile materials, gentle guidance, and time to make something personal.',
+      'Unleash your creativity with a watercolor workshop. Explore different techniques, and create your own piece of art to take home.',
     cta: 'Ask for the next date',
   },
   fr: {
     label: 'Prochain atelier',
-    title: "Table créative d'été",
+    title: "Ateier d'aquarelle",
     dateLabel: 'Date',
     date: 'Prochaine date à annoncer',
     locationLabel: 'Lieu',
     location: 'Ericeira ou Santa Cruz',
     description:
-      'Une session en petit groupe avec des matières tactiles, un accompagnement doux et le temps de créer quelque chose de personnel.',
+      'Libérez votre créativité avec un atelier aquarelle. Explorez différentes techniques et créez votre propre œuvre à emporter.',
     cta: 'Demander la prochaine date',
   },
   pt: {
     label: 'Próximo workshop',
-    title: 'Mesa criativa de verão',
+    title: 'Workshop de aguarela',
     dateLabel: 'Data',
     date: 'Próxima data a anunciar',
     locationLabel: 'Local',
     location: 'Ericeira ou Santa Cruz',
     description:
-      'Uma sessão descontraída em pequeno grupo com materiais táteis, orientação suave e tempo para criar algo pessoal.',
+      'Liberte a sua criatividade com um workshop de aguarela. Explore diferentes técnicas e crie a sua própria obra para levar para casa.',
     cta: 'Perguntar a próxima data',
   },
 };
@@ -506,19 +506,19 @@ export const workshopPauseContent: Record<
   en: {
     title: 'No workshops are currently scheduled',
     message:
-      'I am currently in France, so there are no workshops available right now. I will be back in <strong>October</strong>. <br /> <strong>Sign up to my newsletter</strong> to get the latest info about the next dates.',
+      'There are no workshops available right now. There will be back in <strong>October</strong>. <br /> <strong>Sign up to my newsletter</strong> to get the latest info about the next dates.',
     returningTitle: 'Those workshops will be back in October',
   },
   fr: {
     title: 'Aucun atelier n’est prévu pour le moment',
     message:
-      'Je suis actuellement en France, il n’y a donc pas d’ateliers disponibles pour l’instant. Je serai de retour en <strong>octobre</strong>. <br /><strong>Inscris-toi à ma newsletter</strong> pour recevoir les dernières infos sur les prochaines dates.',
+      'Il n’y a pas d’ateliers disponibles pour l’instant, ils seront de retour en <strong>octobre</strong>. <br /><strong>Inscris-toi à ma newsletter</strong> pour recevoir les dernières infos sur les prochaines dates.',
     returningTitle: 'Ces ateliers seront de retour en octobre',
   },
   pt: {
     title: 'Não há workshops agendados neste momento',
     message:
-      'Estou atualmente em França, por isso não há workshops disponíveis neste momento. Estarei de volta em <strong>outubro</strong>. <br/> <strong>Subscreva a minha newsletter</strong> para receber as últimas informações sobre as próximas datas.',
+      'Não há workshops disponíveis neste momento, estarão de volta em <strong>outubro</strong>. <br/> <strong>Subscreva a minha newsletter</strong> para receber as últimas informações sobre as próximas datas.',
     returningTitle: 'Estes workshops voltam em outubro',
   },
 };
