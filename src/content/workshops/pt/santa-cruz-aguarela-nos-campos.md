@@ -15,7 +15,7 @@ place: 'Cultivo Puro'
 address: |
   Povoa de Penafirme - Santa Cruz
 order: 3
-draft: false
+draft: true
 image: /images/waterlili-watercolor-workshop-in-the-fields-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar na próxima sessão Aguarela nos Campos na Santa Cruz!'

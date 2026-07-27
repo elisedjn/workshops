@@ -15,7 +15,7 @@ place: 'Anima Argilla'
 address: |
   Rua José Pedro Lopes, 17B - Santa Cruz
 order: 1
-draft: false
+draft: true
 image: /images/waterlili-watercolor-workshop-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: "Bonjour, j'aimerais participer à la prochaine session d'aquarelle chez Anima à Santa Cruz !"

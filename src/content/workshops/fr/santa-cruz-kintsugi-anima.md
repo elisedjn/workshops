@@ -15,7 +15,7 @@ place: 'Anima Argilla'
 address: |
   Rua José Pedro Lopes, 17B - Santa Cruz
 order: 4
-draft: false
+draft: true
 image: /images/waterlili-kintsugi-workshop-santa-cruz-portugal-anima.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: "Bonjour, j'aimerais participer à l'atelier kintsugi chez Anima Argilla le 19 juillet !"

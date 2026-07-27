@@ -15,7 +15,7 @@ place: 'JBay Collective'
 address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 4
-draft: false
+draft: true
 image: /images/waterlili-kintsugi-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: "Bonjour, j'aimerais participer à l'atelier kintsugi à Ericeira le 12 juillet !"

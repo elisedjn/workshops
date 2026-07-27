@@ -15,7 +15,7 @@ place: 'SuperCoolMinds'
 address: |
   Edificio Miramar, R. António Palha Figueirôa Rego 1st floor - Santa Cruz
 order: 2
-draft: false
+draft: true
 image: /images/waterlili-kintsugi-workshop-santa-cruz-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar no workshop de kintsugi na SuperCoolMinds no dia 11 de julho!'

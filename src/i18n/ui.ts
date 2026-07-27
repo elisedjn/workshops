@@ -207,7 +207,10 @@ export const atHomeDetails: Record<
   en: {
     offerTitle: 'Workshops I can bring to you',
     workshops: [
-      { name: 'Watercolor', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Watercolor',
+        image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg',
+      },
       {
         name: 'Dreamcatcher',
         image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
@@ -220,7 +223,10 @@ export const atHomeDetails: Record<
         name: 'Kintsugi',
         image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: '3D printed statues painting', image: '/images/3d-printed-statue-painting-workshop-portugal.jpg' },
+      {
+        name: '3D printed statues painting',
+        image: '/images/3d-printed-statue-painting-workshop-portugal.jpg',
+      },
     ],
     faqTitle: 'Practical questions',
     faqIntro: 'The essentials to plan your private workshop',
@@ -260,7 +266,10 @@ export const atHomeDetails: Record<
   fr: {
     offerTitle: 'Les ateliers que je peux apporter chez vous',
     workshops: [
-      { name: 'Aquarelle', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Aquarelle',
+        image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg',
+      },
       {
         name: 'Attrape-rêves',
         image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
@@ -273,7 +282,10 @@ export const atHomeDetails: Record<
         name: 'Kintsugi',
         image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: 'Peinture de statues imprimées en 3D', image: '/images/3d-printed-statue-painting-workshop-portugal.jpg' },
+      {
+        name: 'Peinture de statues imprimées en 3D',
+        image: '/images/3d-printed-statue-painting-workshop-portugal.jpg',
+      },
     ],
     faqTitle: 'Questions pratiques',
     faqIntro: 'Les informations essentielles avant de préparer votre atelier privé.',
@@ -313,7 +325,10 @@ export const atHomeDetails: Record<
   pt: {
     offerTitle: 'Workshops que posso levar até si',
     workshops: [
-      { name: 'Aguarela', image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg' },
+      {
+        name: 'Aguarela',
+        image: '/images/waterlili-watercolor-workshop-ericeira-portugal.jpg',
+      },
       {
         name: 'Caça-sonhos',
         image: '/images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg',
@@ -326,7 +341,10 @@ export const atHomeDetails: Record<
         name: 'Kintsugi',
         image: '/images/waterlili-kintsugi-workshop-ericeira-portugal.jpg',
       },
-      { name: 'Pintura de estátuas impressas em 3D', image: '/images/3d-printed-statue-painting-workshop-portugal.jpg' },
+      {
+        name: 'Pintura de estátuas impressas em 3D',
+        image: '/images/3d-printed-statue-painting-workshop-portugal.jpg',
+      },
     ],
     faqTitle: 'Perguntas práticas',
     faqIntro: 'O essencial antes de planear o seu workshop privado.',
@@ -473,6 +491,147 @@ export const workshopContent: Record<
       intro:
         'Os workshops em casa são sessões privadas e flexíveis para famílias, amigos, aniversários e celebrações acolhedoras.',
       accent: 'pink',
+    },
+  },
+};
+
+export const workshopPauseContent: Record<
+  Locale,
+  {
+    title: string;
+    message: string;
+    returningTitle: string;
+  }
+> = {
+  en: {
+    title: 'No workshops are currently scheduled',
+    message:
+      'I am currently in France, so there are no workshops available right now. I will be back in <strong>October</strong>. <br /> <strong>Sign up to my newsletter</strong> to get the latest info about the next dates.',
+    returningTitle: 'Those workshops will be back in October',
+  },
+  fr: {
+    title: 'Aucun atelier n’est prévu pour le moment',
+    message:
+      'Je suis actuellement en France, il n’y a donc pas d’ateliers disponibles pour l’instant. Je serai de retour en <strong>octobre</strong>. <br /><strong>Inscris-toi à ma newsletter</strong> pour recevoir les dernières infos sur les prochaines dates.',
+    returningTitle: 'Ces ateliers seront de retour en octobre',
+  },
+  pt: {
+    title: 'Não há workshops agendados neste momento',
+    message:
+      'Estou atualmente em França, por isso não há workshops disponíveis neste momento. Estarei de volta em <strong>outubro</strong>. <br/> <strong>Subscreva a minha newsletter</strong> para receber as últimas informações sobre as próximas datas.',
+    returningTitle: 'Estes workshops voltam em outubro',
+  },
+};
+
+export const newsletterSignupContent: Record<
+  Locale,
+  {
+    errorMessage: string;
+    successMessage: string;
+    heading: string;
+    paragraphs: string[];
+    nameLabel: string;
+    namePlaceholder: string;
+    emailLabel: string;
+    emailPlaceholder: string;
+    emailHelp: string;
+    submit: string;
+    longSubmit: string;
+    requiredCodeErrorMessage: string;
+    invalidMessage: string;
+    requiredErrorMessage: string;
+    translation: {
+      selectedList: string;
+      selectedLists: string;
+      selectedOption: string;
+      selectedOptions: string;
+    };
+  }
+> = {
+  en: {
+    errorMessage: 'Oopsy, a small technical issue kept us from confirming your signup.',
+    successMessage:
+      "Welcome! Your signup is confirmed, and you'll soon receive your first free wallpaper.",
+    heading: 'Need a little softness?',
+    paragraphs: [
+      'Twice a month, receive a <strong>dose of comfort, joy, and color</strong> in your inbox.',
+      'And a little gift: every month, discover an <strong>exclusive mobile wallpaper</strong> to download!',
+      'So, are you ready to <strong>make your inbox sparkle?</strong>',
+    ],
+    nameLabel: 'How should I call you?',
+    namePlaceholder: 'FIRST NAME',
+    emailLabel: 'What is your email address?',
+    emailPlaceholder: 'EMAIL',
+    emailHelp: 'Please enter your email address to sign up. Example: abc@xyz.com',
+    submit: 'SIGN UP',
+    longSubmit: 'SIGN UP TO MY NEWSLETTER',
+    requiredCodeErrorMessage: 'Please choose a country code',
+    invalidMessage:
+      'The information you provided is not valid. Please check the field format and try again.',
+    requiredErrorMessage: 'This field is required. ',
+    translation: {
+      selectedList: '{quantity} list selected',
+      selectedLists: '{quantity} lists selected',
+      selectedOption: '{quantity} selected',
+      selectedOptions: '{quantity} selected',
+    },
+  },
+  fr: {
+    errorMessage:
+      "Oopsy, petit soucis technique, nous n'avons pas pu confirmer ton inscription.",
+    successMessage:
+      "Bienvenue! Ton inscription est confirmée, tu recevras bientôt ton premier fond d'écran gratuit.",
+    heading: "Besoin d'un peu de douceur ?",
+    paragraphs: [
+      'Deux fois par mois, reçois une <strong>dose de réconfort, de joie et de couleurs</strong> dans ta boîte mail.',
+      'Et petit cadeau : chaque mois, découvre un <strong>fond d’écran mobile exclusif</strong> à télécharger !',
+      'Alors, es-tu prêt.e à <strong>faire pétiller ta boîte mail ?</strong>',
+    ],
+    nameLabel: "Comment veux-tu que je t'appelle ?",
+    namePlaceholder: 'PRENOM',
+    emailLabel: 'Quelle est ton adresse mail ?',
+    emailPlaceholder: 'EMAIL',
+    emailHelp: "Merci de renseigner ton adresse email pour t'inscrire. Ex. : abc@xyz.com",
+    submit: "S'INSCRIRE",
+    longSubmit: "S'INSCRIRE À MA NEWSLETTER",
+    requiredCodeErrorMessage: 'Veuillez choisir un code pays',
+    invalidMessage:
+      'Les informations que tu as fournies ne sont pas valides. Je te conseille de vérifier le format du champ et de réessayer.',
+    requiredErrorMessage: 'Ce champ est obligatoire. ',
+    translation: {
+      selectedList: '{quantity} liste sélectionnée',
+      selectedLists: '{quantity} listes sélectionnées',
+      selectedOption: '{quantity} sélectionné',
+      selectedOptions: '{quantity} sélectionnés',
+    },
+  },
+  pt: {
+    errorMessage:
+      'Oopsy, um pequeno problema técnico impediu-nos de confirmar a sua inscrição.',
+    successMessage:
+      'Bem-vinda! A sua inscrição está confirmada e em breve receberá o seu primeiro wallpaper gratuito.',
+    heading: 'Precisa de um pouco de doçura?',
+    paragraphs: [
+      'Duas vezes por mês, receba uma <strong>dose de conforto, alegria e cor</strong> na sua caixa de entrada.',
+      'E um pequeno presente: todos os meses, descubra um <strong>wallpaper exclusivo para telemóvel</strong> para descarregar!',
+      'Então, está pronta para <strong>dar brilho à sua caixa de entrada?</strong>',
+    ],
+    nameLabel: 'Como gostaria que eu a chamasse?',
+    namePlaceholder: 'NOME',
+    emailLabel: 'Qual é o seu endereço de email?',
+    emailPlaceholder: 'EMAIL',
+    emailHelp: 'Introduza o seu endereço de email para se inscrever. Ex.: abc@xyz.com',
+    submit: 'SUBSCREVER',
+    longSubmit: 'SUBSCREVER A MINHA NEWSLETTER',
+    requiredCodeErrorMessage: 'Escolha um indicativo de país',
+    invalidMessage:
+      'As informações fornecidas não são válidas. Verifique o formato do campo e tente novamente.',
+    requiredErrorMessage: 'Este campo é obrigatório. ',
+    translation: {
+      selectedList: '{quantity} lista selecionada',
+      selectedLists: '{quantity} listas selecionadas',
+      selectedOption: '{quantity} selecionado',
+      selectedOptions: '{quantity} selecionados',
     },
   },
 };

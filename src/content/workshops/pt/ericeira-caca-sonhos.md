@@ -15,7 +15,7 @@ place: 'JBay Collective'
 address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 2
-draft: false
+draft: true
 image: /images/waterlili-dreamcatcher-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar no workshop de caça-sonhos na Ericeira no dia 5 de julho!'

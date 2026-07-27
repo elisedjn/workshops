@@ -15,7 +15,7 @@ place: 'JBay Collective'
 address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 3
-draft: false
+draft: true
 image: /images/waterlili-ericeira-3d-printed-statue-painting-workshop-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Hello, I would like to join the Painting Workshop in Ericeira on the 10th of July!'

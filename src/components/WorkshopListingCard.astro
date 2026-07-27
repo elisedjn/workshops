@@ -10,9 +10,10 @@ import { getBookingHref } from '../utils/booking';
 interface Props {
   workshop: CollectionEntry<'workshops'>;
   lang: Locale;
+  showActions?: boolean;
 }
 
-const { workshop, lang } = Astro.props;
+const { workshop, lang, showActions = true } = Astro.props;
 const bookingUrl = getBookingHref(workshop.data.bookingUrl, workshop.data.bookingMessage);
 const detailPath = getWorkshopPath(workshop.data.location, lang, workshop.data.slug);
 const labels = {
@@ -151,12 +152,16 @@ const labels = {
           )
         }
       </dl>
-      <div class='mt-7 flex flex-wrap gap-3'>
-        <LinkButton href={withBase(detailPath)} variant='secondary'
-          >{sharedText[lang].workshopDetails}</LinkButton
-        >
-        <LinkButton href={bookingUrl}>{sharedText[lang].bookCta}</LinkButton>
-      </div>
+      {
+        showActions && (
+          <div class='mt-7 flex flex-wrap gap-3'>
+            <LinkButton href={withBase(detailPath)} variant='secondary'>
+              {sharedText[lang].workshopDetails}
+            </LinkButton>
+            <LinkButton href={bookingUrl}>{sharedText[lang].bookCta}</LinkButton>
+          </div>
+        )
+      }
     </div>
   </div>
 </article>

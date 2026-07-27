@@ -15,7 +15,7 @@ place: 'JBay Collective'
 address: |
   R. Dr. Eduardo Burnay 32 A - Ericeira
 order: 1
-draft: false
+draft: true
 image: /images/waterlili-watercolor-workshop-ericeira-portugal.jpg
 bookingUrl: 'https://wa.me/33662890364'
 bookingMessage: 'Olá, gostaria de participar na próxima sessão Aguarela - Dicas e técnicas na Ericeira!'
