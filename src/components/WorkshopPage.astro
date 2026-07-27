@@ -4,7 +4,13 @@ import NewsletterSignupForm from '@components/NewsletterSignupForm.astro';
 import WorkshopListingCard from '@components/WorkshopListingCard.astro';
 import BaseLayout from '@layouts/BaseLayout.astro';
 import { type Locale, type RouteKey } from '@i18n/config';
-import { siteName, workshopContent, workshopPauseContent } from '@i18n/ui';
+import {
+  siteName,
+  workshopContent,
+  workshopPauseContent,
+  newsletterSignupContent,
+} from '@i18n/ui';
+import LinkButton from './LinkButton.astro';
 
 interface Props {
   lang: Locale;
@@ -14,6 +20,7 @@ interface Props {
 const { lang, route } = Astro.props;
 const content = workshopContent[route][lang];
 const pauseContent = workshopPauseContent[lang];
+const newsletterContent = newsletterSignupContent[lang];
 const location = route === 'santaCruz' ? 'santa-cruz' : 'ericeira';
 const workshopEntries = (
   await getCollection('workshops', ({ data }) => {
@@ -84,10 +91,21 @@ const returningWorkshops = (
           <div class='mx-auto max-w-6xl p-6 md:p-8 text-center'>
             <p class='font-heading font-bold text-4xl text-green'>{pauseContent.title}</p>
             <p
-              class='mt-3 mx-auto max-w-lg italic text-grey/80 md:text-lg'
+              class='mt-3 mx-auto max-w-lg italic text-grey/80 md:text-lg mb-4'
               set:html={pauseContent.message}
             />
-            <NewsletterSignupForm lang={lang} showText={false} />
+            <LinkButton
+              href={
+                lang === 'fr'
+                  ? 'https://waterlili.eu/inscription.html'
+                  : 'https://waterlili.eu/inscription_en.html'
+              }
+              openInNewTab
+            >
+              {newsletterContent.longSubmit}
+            </LinkButton>
+
+            {/* <NewsletterSignupForm lang={lang} showText={false} /> */}
           </div>
         </section>
 
